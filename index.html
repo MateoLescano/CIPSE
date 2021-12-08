@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
 
+    <script src="maps.js"></script>
+
 </head>
 
 <body>
@@ -222,12 +224,17 @@
     <div class="Contacto" id="Contacto">
         <h2>Contactanos</h2>
 
+    <span id="inp1">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required minlength="3" maxlength="15" size="10">
+    </span>
 
+    <span id="inp2">
         <label for="mail">Mail:</label>
         <input type="email" id="mail" name="mail" required size="10">
+    </span>
 
+    <span id="inp4">
         <label for="asunto">Asunto:</label>
         <select name="asunto" id="asunto">
             <option value="curso">Curso</option>
@@ -235,16 +242,49 @@
             <option value="consulta">Consulta</option>
             <option value="otro">Otro</option>
         </select>
+    </span>
 
+
+    <span id="inp3">
         <label for="telefono">Mail:</label>
         <input type="tel" id="telefono" name="telefono" required size="10">
+    </span>
 
+    <span id="inp5">
         <label for="mensaje">Mensaje:</label>
         <input type="text" id="mensaje" name="mensaje" required size="30">
+    </span>
 
+    <div id="map"></div>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlau89Lhj-lVoosjYWbMw37vhpdTi3io4&callback=initMap&libraries=&v=weekly"></script>
 
     </div>
 
 </body>
+
+<footer>
+
+    <span>
+        <p>
+            Centro Integral de Psicoterapias con Soporte Empírico <br>
+            Av. Federico Lacroze 2827 8ºF - Capital Federal, Argentina <br>
+            011 2080-2353 o 15 6796-2497 <br>
+            contactocipse@gmail.com
+        </p>
+    </span>
+
+    
+        <a href="https://www.facebook.com/CIPSE.EMDR/" target="_blank" rel="noopener noreferrer"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+        <a href="https://www.instagram.com/cipse/" target="_blank" rel="noopener noreferrer"><img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+        <a href="https://www.linkedin.com/in/cipse-centro-de-psicoterapias-8a77133a/" target="_blank" rel="noopener noreferrer"><img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+    
+
+    <span id="by">
+        <p>Sitio desarrollado por</p>
+        <a href="https://twitter.com/citesoftware" target="_blank" rel="noopener noreferrer"><img src="cs.png" alt="HTML tutorial" style="width:50px;height:50px;"></a>
+        <p>Cité Software</p>
+    </span>
+
+</footer>
 
 </html>
