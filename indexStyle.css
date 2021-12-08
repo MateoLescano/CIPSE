@@ -470,11 +470,11 @@ body{
 }
 
 #faq1, #faq3, #faq5{
-  background-color: #FF8F00;
+  height: fit-content;
 }
 
 #faq2, #faq4 {
-  height: fit-content;
+  background-color: #FF8F00;
 }
 
 /* CONTACTO */
