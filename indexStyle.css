@@ -11,10 +11,19 @@ html{
 
 a{
   color: black;
+  font-size: 1.5em;
 }
 
 h2{
   font-size: 2em;
+}
+
+h3{
+  font-size: 1.8em;
+}
+
+h4{
+  font-size: 1.6em;
 }
 
 /* HEADER */
@@ -208,10 +217,10 @@ body{
   padding: 10px;
 }
 
+/*EQUIPO*/
 
 .Equipo{
   height: 100vh;
-  width: 100%;
   background-color: #FF9F00;
   display: grid;
 
@@ -289,4 +298,98 @@ body{
 
 .Equipo a{
   font-size: 1.5em;
+}
+
+/*FORMACION*/
+
+.Formacion{
+  height: 100vh;
+  display: grid;
+  grid-area: 1 / 1 / 5 / 2;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.Formacion img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+.Formacion h2{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 8vh;
+}
+
+.Formacion #img1{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  justify-self: center;
+}
+.Formacion #img2 {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  justify-self: center;
+}
+
+.Formacion #titulo1{
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.Formacion #titulo2{
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.Formacion #lista1{
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.Formacion #lista2{
+  grid-row: 4 / span 1;
+  grid-column: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.Formacion #link1 {
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.Formacion #link2 {
+  grid-row: 5 / span 1;
+  grid-column: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.Formacion ul a {
+  text-decoration: none;
+}
+
+/* TRATAMIENTO */
+
+.Tratamiento{
+  background-color: #FF8F00;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
