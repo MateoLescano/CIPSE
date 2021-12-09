@@ -55,7 +55,7 @@
       
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="maxresdefault.jpg" style="width:100%">
+          <img src="https://www.galchimia.com/wp-content/uploads/2021/06/how-to-crash-your-own-presentation.jpg" style="width:100%">
           <div class="text">Foto 3</div>
         </div>
       
@@ -226,12 +226,12 @@
 
     <span id="inp1">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required minlength="3" maxlength="15" size="10">
+        <input type="text" id="name" name="name" required minlength="3" maxlength="15" placeholder="Obligatorio">
     </span>
 
     <span id="inp2">
         <label for="mail">Mail:</label>
-        <input type="email" id="mail" name="mail" required size="10">
+        <input type="email" id="mail" name="mail" required placeholder="Obligatorio">
     </span>
 
     <span id="inp4">
@@ -243,20 +243,27 @@
             <option value="otro">Otro</option>
         </select>
     </span>
+    
 
 
     <span id="inp3">
-        <label for="telefono">Mail:</label>
-        <input type="tel" id="telefono" name="telefono" required size="10">
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono">
     </span>
 
     <span id="inp5">
         <label for="mensaje">Mensaje:</label>
-        <input type="text" id="mensaje" name="mensaje" required size="30">
+        <input type="text" id="mensaje" name="mensaje">
     </span>
 
+    <div id="mapas">
+    <h3>El consultorio:</h3>
     <div id="map"></div>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlau89Lhj-lVoosjYWbMw37vhpdTi3io4&callback=initMap&libraries=&v=weekly"></script>
+    <h3>Av. Federico Lacroze 2827 8ºF</h3>
+    </div>
+
+    <button type="button">Enviar mensaje</button>
 
     </div>
 
