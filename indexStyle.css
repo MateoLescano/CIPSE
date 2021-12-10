@@ -630,9 +630,6 @@ body{
 }
 
 #tituloMapa{
-  background-color: #FF8F00;
-  border-radius: 10px;
-  padding: 5px;
   width: fit-content;
   justify-content: center;
 }
