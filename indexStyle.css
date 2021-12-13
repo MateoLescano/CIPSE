@@ -2,7 +2,6 @@
   box-sizing:border-box;
   margin: 0;
   padding: 0;
-
 }
 
 html{
@@ -57,7 +56,7 @@ p{
 /* HEADER */
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 7vh;
     font-family: 'Comfortaa', cursive;
 }
@@ -72,12 +71,14 @@ header ul {
     flex-direction: row;
     justify-content: space-evenly;
     overflow: hidden;
+    align-items: center;
 }
 
 header li {
     display: inline;
     float: left;
     width: 100%;
+    height: 100%;
 }
 
 header li a {
@@ -87,6 +88,7 @@ header li a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1em;
+  
 }
 
 header li a:hover{
