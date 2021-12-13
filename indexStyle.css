@@ -212,7 +212,8 @@ body{
 
 .Inicio{
   margin-top: 7vh;
-  
+  height: 70%;
+  min-height: 70vh;
   width: 100%;
 }
 
@@ -220,7 +221,8 @@ body{
 /* EMDR */
 
 .EMDR {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: grid;
   grid-area: 1 / 1 / 2 / 2;
@@ -266,7 +268,7 @@ body{
 /*EQUIPO*/
 
 .Equipo{
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #FF9F00;
   display: grid;
@@ -350,7 +352,8 @@ body{
 /*FORMACION*/
 
 .Formacion{
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: grid;
   grid-area: 1 / 1 / 5 / 2;
@@ -437,7 +440,8 @@ body{
 
 .Tratamiento{
   background-color: #FF8F00;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -477,7 +481,8 @@ body{
 /* PREGUNTAS FRECUENTES */
 
 .FAQ {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -525,11 +530,13 @@ body{
 
 .Contacto {
   min-height: 100vh;
-  height: fit-content;
+  row-gap: 5%;
+  height: 100%;
   width: 100%;
   background-color: #4682b4;
   display: grid;
   grid-area: 1/1/5/3;
+  grid-template-rows: 1fr 1fr 1fr 1fr 5fr;
 }
 
 .Contacto label {
@@ -624,17 +631,17 @@ body{
 }
 
 #map{
-  height: 100%;
-  min-height: 300px;
-  width: 100%;
-  min-width: 900px;
+  height: 90%;
+  width: 50%;
 }
 
 #mapas{
+  width: 100%;
+  height: 100%;
   grid-row: 5 / span 1;
   grid-column: 1 / span 3;
-  justify-self: center;
   display: flex;
+  justify-self: center;
   flex-direction: column;
   align-items: center;
 }
@@ -656,6 +663,36 @@ body{
 #tituloMapa{
   width: fit-content;
   justify-content: center;
+}
+
+/* FOOTER */
+
+footer{
+  clear: both;
+  position: relative;
+  background-color: #FF8F00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  padding: 2vh;
+  
+}
+
+footer img{
+  border-radius: 5px;
+  height: 60px;
+}
+
+footer p{
+  font-size: 1em;
+}
+
+#by{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
 
@@ -735,33 +772,7 @@ body{
 
 
 
-/* FOOTER */
 
-footer{
-  background-color: #FF8F00;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
-  padding: 2vh;
-  
-}
-
-footer img{
-  border-radius: 5px;
-  height: 60px;
-}
-
-footer p{
-  font-size: 1em;
-}
-
-#by{
- display: flex;
- flex-direction: column;
- align-items: center;
-}
 
 
 
