@@ -156,22 +156,25 @@ img{
 /* HEADER */
 
 header {
+    z-index: 1;
+    position: fixed;
     width: 100%;
+    min-width: fit-content;
     height: 7vh;
+    margin: 0 auto;
     font-family: 'Comfortaa', cursive;
+    
 }
 
 header ul {
     display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    width: 100%;
     text-align: center;
-    background-color: #FF8F00;
     flex-direction: row;
-    justify-content: space-evenly;
-    overflow: hidden;
+    justify-content: space-between;
     align-items: center;
+    background-color: #FF8F00;
 }
 
 header li {
@@ -201,9 +204,14 @@ header li a:hover{
 
 body{
   display: flex;
+  width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   font-family: 'Nunito', sans-serif;
+}
+
+.Inicio{
+  margin-top: 7vh;
 }
 
 
