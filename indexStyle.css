@@ -272,8 +272,10 @@ body{
   width: 100%;
   background-color: #FF9F00;
   display: grid;
+  row-gap: 5%;
   grid-area: 1 / 1 / 4 / 3;
   justify-items: center;
+  grid-template-rows: 1fr 2fr 3fr 1fr;
 }
 
 .Equipo h2{
@@ -359,7 +361,7 @@ body{
   grid-area: 1 / 1 / 5 / 2;
   justify-items: center;
   align-items: center;
-
+  grid-template-rows: 1fr 3fr 1fr 2fr 1fr;
 }
 
 .Formacion img{
@@ -489,7 +491,6 @@ body{
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
-  
 }
 
 .FAQ span{
@@ -703,6 +704,8 @@ footer p{
 }
 
 .tituloDetalle{
+  margin-top: 10vh;
+  margin-bottom: 5vh;
   width: 100%;
   background-color: #4682b4;
 }
@@ -715,9 +718,17 @@ footer p{
   background-color: #4682b4;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-items: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+}
+
+.equipoDetallado span{
+  width: 33.3%;
+  margin-bottom: 5%;
+}
+
+.equipoDetallado span p{
+  text-align:center;
 }
 
 .equipoDetallado h2{
@@ -739,6 +750,7 @@ footer p{
   border-radius: 50%;
   margin-bottom: 10px;
 }
+
 
 .equipoDetallado a{
   font-size: 1.5em;
@@ -771,26 +783,35 @@ footer p{
 }
 
 
+@media screen and (max-width: 480px)  {
 
 
 
+  .equipoDetallado span{
+    width: 100%;
+    margin-bottom: 5%;
+  }
 
+  .equipoDetallado span p{
+    padding: 10px;
+  }
 
-@media only screen and (min-width: 200px) and (max-width: 480)  {
+  body{
+    min-width: fit-content;
+  }
+}
+
+/* @media screen and (min-width: 481px) and (max-width: 768px)  {
 
 }
 
-@media only screen and (min-width: 481) and (max-width: 768px)  {
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
 
 }
 
-@media only screen and (min-width: 769) and (max-width: 1024)  {
+@media screen and (min-width: 1025px) and (max-width: 1200px)  {
 
-}
-
-@media only screen and (min-width: 1025) and (max-width: 1200)  {
-
-}
+} */
 
 
 
