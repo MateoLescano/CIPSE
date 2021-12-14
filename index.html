@@ -22,12 +22,17 @@
 </head>
 
 <body>
+
+    <div class="HeaderHidden"></div>
+    
     <header>
+
         <ul>
-            <li><a href=#Inicio>Inicio</a></li>
+            <li><a id="logo" href=#Inicio><img src="http://cipse.com.ar/images/logo.png"></a></li>
             <li><a href=#EMDR>¿Qué es EMDR?</a></li>
             <li><a href=#Equipo>Equipo</a></li>
             <li><a href=#Formacion>Formación</a></li>
+            <li><a href=#Tratamiento>Tratamiento</a></li>
             <li><a href=#FAQ>Preguntas Frecuentes</a></li>
             <li><a href=#Contacto>Contacto</a></li>
             <li><a href=#Recursos>Recursos</a></li>
@@ -36,27 +41,31 @@
     </header>
 
     
+
+    
     <div class="Inicio" id="Inicio">
  
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
+                <div class="numbertext">1 / 3</div>
+                <img src="https://www.galchimia.com/wp-content/uploads/2021/06/how-to-crash-your-own-presentation.jpg" style="width:100%">
+                <div class="text">Bienvenidx a CIPSE!</div>
+              </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
               <img src="maxresdefault.jpg" style="width:100%">
               <div class="text">Bienvenido a CIPSE</div>
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
+              <div class="numbertext">3 / 3</div>
               <img src="abc.jpg" style="width:100%">
               <div class="text">Caption Two</div>
             </div>
             
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="https://www.galchimia.com/wp-content/uploads/2021/06/how-to-crash-your-own-presentation.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
+            
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -170,7 +179,7 @@
     <div class="Tratamiento" id="Tratamiento">
         <h2>Tratamiento</h2>
 
-        <p>texto</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
         <h3>¿Querés solicitar una consulta de admisión?</h3>
 
@@ -225,17 +234,17 @@
         <h2>Contactanos</h2>
 
     <span id="inp1">
-        <label for="name">Nombre:</label>
+        <label for="name">Nombre</label>
         <input type="text" id="name" name="name" required minlength="3" maxlength="15" placeholder="Obligatorio">
     </span>
 
     <span id="inp2">
-        <label for="mail">Mail:</label>
+        <label for="mail">Mail</label>
         <input type="email" id="mail" name="mail" required placeholder="Obligatorio">
     </span>
 
     <span id="inp4">
-        <label for="asunto">Asunto:</label>
+        <label for="asunto">Asunto</label>
         <select name="asunto" id="asunto">
             <option value="curso">Curso</option>
             <option value="tratamiento">Tratamiento</option>
@@ -247,20 +256,25 @@
 
 
     <span id="inp3">
-        <label for="telefono">Telefono:</label>
+        <label for="telefono">Telefono</label>
         <input type="tel" id="telefono" name="telefono">
     </span>
 
     <span id="inp5">
-        <label for="mensaje">Mensaje:</label>
+        <label for="mensaje">Mensaje</label>
         <input type="text" id="mensaje" name="mensaje">
     </span>
 
     <div id="mapas">
-    <h3 id="tituloMapa">El consultorio:</h3>
+    <h4 id="tituloMapa">Donde Estamos</h4>
     <div id="map"></div>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlau89Lhj-lVoosjYWbMw37vhpdTi3io4&callback=initMap&libraries=&v=weekly"></script>
-    <h3 id="direccion">Av. Federico Lacroze 2827 8ºF</h3>
+    <h3 id="direccion">Av. Federico Lacroze 2827 8ºF - CABA<br><br>
+        Horario de atencion: L. a V. de 8:00hs a 20:00hs
+    </h3>
+
+    <a href="https://api.whatsapp.com/send?phone=5491167962497" target="_blank" rel="noopener noreferrer"><img id="wpp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1021px-WhatsApp.svg.png" alt="HTML tutorial"></a>
+
     </div>
 
     <button type="button">Enviar mensaje</button>
@@ -273,7 +287,7 @@
             <p>
                 Centro Integral de Psicoterapias con Soporte Empírico <br>
                 Av. Federico Lacroze 2827 8ºF - Capital Federal, Argentina <br>
-                011 2080-2353 o 15 6796-2497 <br>
+                +54 9 11 6796 2497 <br>
                 contactocipse@gmail.com
             </p>
         </span>
@@ -282,7 +296,7 @@
             <a href="https://www.facebook.com/CIPSE.EMDR/" target="_blank" rel="noopener noreferrer"><img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="HTML tutorial"></a>
             <a href="https://www.instagram.com/cipse/" target="_blank" rel="noopener noreferrer"><img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-logo.png" alt="HTML tutorial" ></a>
             <a href="https://www.linkedin.com/in/cipse-centro-de-psicoterapias-8a77133a/" target="_blank" rel="noopener noreferrer"><img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="HTML tutorial" ></a>
-        
+            <a href="https://api.whatsapp.com/send?phone=5491167962497" target="_blank" rel="noopener noreferrer"><img src="https://w7.pngwing.com/pngs/632/756/png-transparent-whatsapp-logo-computer-icons-whatsapp-cdr-text-logo.png" alt="HTML tutorial"></a>
     
         <span id="by">
             <p>Sitio desarrollado por</p>
