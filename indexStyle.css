@@ -311,12 +311,10 @@ body{
   justify-self: center;
 }
 
-
 .Equipo #eq1 {
   grid-row: 3 / span 1;
   grid-column: 1 / span 1;
   justify-self: center;
-
   justify-items: center;
   align-items: center;
 }
@@ -325,12 +323,16 @@ body{
   grid-row: 3 / span 1;
   grid-column: 2 / span 1;
   justify-self: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .Equipo #eq3 {
   grid-row: 3 / span 1;
   grid-column: 3 / span 1;
   justify-self: center;
+  justify-items: center;
+  align-items: center;
 }
 
 
@@ -357,9 +359,14 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  max-width: 350px;
+  height: 60%;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+
+.Equipo span{
+  width: 100%;
 }
 
 .Equipo a{
@@ -473,6 +480,11 @@ background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%)
   height: fit-content;
 }
 
+.Tratamiento p{
+  padding: 20px;
+  text-align: center;
+}
+
 
 .Tratamiento button{
   background-color: #4682b4;
@@ -552,8 +564,8 @@ background-color: #fbceb1;
   height: 100%;
   width: 100%;
   display: grid;
-  grid-area: 1/1/5/3;
-  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  grid-area: 1/1/4/3;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
   grid-template-columns: 1fr 1fr 2fr;
 }
 
@@ -575,55 +587,62 @@ background-color: #fbceb1;
   flex-direction: column;
 }
 
-.Contacto input, select {
+.Contacto input, select, textarea {
   border: #1b5583 solid 2px;
   border-radius: 5px;
   height: 2.5em;
-  width: 15em;
+  width: 80%;
   font-size: 1.5em;
   font-family: 'Nunito', sans-serif;
   justify-content: center;
   align-content: center;
 }
 
-#inp1{
-  grid-row: 2 / span 1;
-  grid-column: 1 / span 1;
+.Contacto textarea{
+  resize: none;
+  width: 100%;
+  height: 50%;
+}
+
+.Contacto form{
+
+  grid-row: 2 / span 3;
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+
+.Contacto label, input, select{
   justify-self: center;
   align-self: center;
-  
-  padding-left: 20px;
+}
+
+#inp1{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
 }
 
 #inp2{
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
   grid-column: 2 / span 1;
-  justify-self: center;
-  align-self: center;
-  padding-left: 20px;
 }
 
 #inp3{
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
   grid-column: 2 / span 1;
-  justify-self: center;
-  align-self: center;
-  padding-left: 20px;
 }
 
 #inp4 {
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
   grid-column: 1 / span 1;
-  justify-self: center;
-  align-self: center;
-  padding-left: 20px;
 }
 
 #inp5{
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
   grid-column: 1 / span 2;
-  width: 100%;
-  padding-left: 20px;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #inp5 input {
@@ -632,7 +651,7 @@ background-color: #fbceb1;
 }
 
 .Contacto button{
-  grid-row: 5 / span 1;
+  grid-row: 4 / span 1;
   grid-column: 1 / span 2;
   justify-self: center;
   height: fit-content;

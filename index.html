@@ -233,51 +233,60 @@
     <div class="Contacto" id="Contacto">
         <h2>Contactanos</h2>
 
-    <span id="inp1">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" required minlength="3" maxlength="15" placeholder="Obligatorio">
-    </span>
+    <form action="https://formsubmit.co/mateolescano@gmail.com" method="POST">
 
-    <span id="inp2">
-        <label for="mail">Mail</label>
-        <input type="email" id="mail" name="mail" required placeholder="Obligatorio">
-    </span>
 
-    <span id="inp4">
-        <label for="asunto">Asunto</label>
-        <select name="asunto" id="asunto">
-            <option value="curso">Curso</option>
-            <option value="tratamiento">Tratamiento</option>
-            <option value="consulta">Consulta</option>
-            <option value="otro">Otro</option>
-        </select>
-    </span>
+        <input type="hidden" name="_subject" value="Nuevo mensaje de CIPSE.com">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+        <input type="hidden" name="_template" value="box">
+
+        <span id="inp1">
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre" name="Nombre" required minlength="3" maxlength="15" placeholder="Obligatorio">
+        </span>
+
+        <span id="inp2">
+            <label for="Mail">Mail</label>
+            <input type="email" id="Mail" name="Mail" required placeholder="Obligatorio">
+        </span>
+
+        <span id="inp3">
+            <label for="Telefono">Teléfono</label>
+            <input type="tel" id="Telefono" name="Telefono">
+        </span>
+
+        <span id="inp4">
+            <label for="Asunto">Asunto</label>
+            <select name="Asunto" id="Asunto">
+                <option value="curso">Curso</option>
+                <option value="tratamiento">Tratamiento</option>
+                <option value="consulta">Consulta</option>
+                <option value="otro">Otro</option>
+            </select>
+        </span>
     
+        <span id="inp5">
+            <label for="Mensaje">Mensaje</label>
+            <textarea id="Mensaje" name="Mensaje"></textarea>
+        </span>
 
+        <button type="submit">Enviar mensaje</button>
 
-    <span id="inp3">
-        <label for="telefono">Telefono</label>
-        <input type="tel" id="telefono" name="telefono">
-    </span>
-
-    <span id="inp5">
-        <label for="mensaje">Mensaje</label>
-        <input type="text" id="mensaje" name="mensaje">
-    </span>
-
+    </form>
     <div id="mapas">
     <h4 id="tituloMapa">Donde Estamos</h4>
     <div id="map"></div>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlau89Lhj-lVoosjYWbMw37vhpdTi3io4&callback=initMap&libraries=&v=weekly"></script>
     <h3 id="direccion">Av. Federico Lacroze 2827 8ºF - CABA<br><br>
-        Horario de atencion: L. a V. de 8:00hs a 20:00hs
+        Horario de atención: L. a V. de 8:00hs a 20:00hs
     </h3>
 
     <a href="https://api.whatsapp.com/send?phone=5491167962497" target="_blank" rel="noopener noreferrer"><img id="wpp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1021px-WhatsApp.svg.png" alt="HTML tutorial"></a>
 
     </div>
 
-    <button type="button">Enviar mensaje</button>
+    
+    
 
     </div>
 
