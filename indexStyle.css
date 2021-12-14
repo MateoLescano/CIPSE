@@ -172,7 +172,7 @@ header {
     min-width: fit-content;
     margin: 0 auto;
     font-family: 'Comfortaa', cursive;
-    
+    transition: top 0.22s;
 }
 
 header ul {
@@ -384,7 +384,6 @@ body{
   justify-items: center;
   align-items: center;
   grid-template-rows: 1fr 3fr 1fr 2fr 1fr;
-  /* background: linear-gradient(0deg, white, #fbceb1); */
   background-color: #fbceb1;
 }
 
@@ -551,8 +550,6 @@ background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%)
 }
 
 #faq2, #faq4 {
-  /* background-color: #d9e4f5;
-background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%); */
 background-color: #fbceb1;
   height: fit-content;
 }
@@ -754,15 +751,10 @@ footer p{
 
 /* EQUIPO DETALLADO */
 
-.equipoFull{
-  background-color: #4682b4;
-}
-
 .tituloDetalle{
   margin-top: 10vh;
   margin-bottom: 5vh;
   width: 100%;
-  background-color: #4682b4;
 }
 .tituloDetalle h2{
   height: fit-content;
@@ -770,7 +762,7 @@ footer p{
 }
 
 .equipoDetallado{
-  background-color: #4682b4;
+  background: linear-gradient(180deg, white, #fbceb1);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -813,15 +805,13 @@ footer p{
 
 .asociaciones{
   height: 100vh;
-  background-color: #FF9F00;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background: linear-gradient(0deg, white, #fbceb1);
 }
 
 .asociaciones img{
-  /* height: 10%;
-  width: 10%; */
   height: 100px;
   width: 100px;
 }
