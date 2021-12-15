@@ -913,6 +913,7 @@ footer p{
   #navbar{
     display: flex;
     flex-direction: row;
+    width: 100%;
     background-color: #1b5583;
     justify-content: space-between;
     align-content: center;
@@ -1004,23 +1005,15 @@ footer p{
   }
 }
 
-/* @media screen and (min-width: 481px) and (max-width: 768px)  {
 
-}
 
-@media screen and (min-width: 769px) and (max-width: 1024px)  {
+/* @media screen and (min-width: 769px) and (max-width: 1024px)  {
 
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px)  {
 
 } */
-
-
-
-
-
-
 
 
 
