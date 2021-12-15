@@ -177,7 +177,7 @@ header {
     transition: top 0.2s;
 }
 
-header ul {
+header nav ul {
     display: flex;
     list-style-type: none;
     width: 100%;
@@ -188,14 +188,14 @@ header ul {
     background-color: #1b5583;
 }
 
-header li {
+header nav li {
     display: inline;
     float: left;
     width: 100%;
     height: 100%;
 }
 
-header li a:not(#logo){
+header nav li a:not(#logo){
   display: block;
   color: black;
   text-align: center;
@@ -208,12 +208,12 @@ header li a:not(#logo){
 }
 
 
-header li a:hover:not(#logo){
+header nav li a:hover:not(#logo){
     background-color: #ed9121;
     color: black;
 }
 
-header img{
+header nav img{
   height: 3rem;
   margin-left: 30px;
 }
@@ -367,6 +367,7 @@ body{
   margin-right: auto;
   max-width: 350px;
   height: 60%;
+  max-height: 350px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -389,7 +390,7 @@ body{
   grid-area: 1 / 1 / 5 / 2;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 1fr 3fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
   background-color: #fbceb1;
 }
 
@@ -416,7 +417,7 @@ body{
   justify-self: center;
 }
 .Formacion #img2 {
-  grid-row: 2 / span 1;
+  grid-row: 4 / span 1;
   grid-column: 2 / span 1;
   justify-self: center;
 }
@@ -429,7 +430,7 @@ body{
 }
 
 .Formacion #titulo2{
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 1;
   grid-column: 2 / span 1;
   justify-self: center;
   align-self: center;
@@ -443,7 +444,7 @@ body{
 }
 
 .Formacion #lista2{
-  grid-row: 4 / span 1;
+  grid-row: 3 / span 1;
   grid-column: 2 / span 1;
   justify-self: center;
   align-self: center;
@@ -833,10 +834,100 @@ footer p{
   justify-content: space-around;
 }
 
+#hamIcon{
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  width: fit-content;
+  margin-top: 1%;
+  margin-right: 5%;
+}
 
-@media screen and (max-width: 480px)  {
+#hamIcon div {
+  width: 60px;
+  height: 4px;
+  background-color: #ed9121;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+
+.open .bar1{
+  -webkit-transform: rotate(45deg) translate(-6px, 30px);
+  transform: rotate(45deg) translate(-6px, 21px);
+}
+
+.open .bar2{
+  opacity: 0;
+}
+
+.open .bar3{
+  -webkit-transform: rotate(-45deg) translate(-6px, -25px);
+  transform: rotate(-45deg) translate(-6px, -23px);
+}
+
+.open .mobileMenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobileMenu{
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  height: fit-content;
+  background-color: #1b5583;
+  list-style-type: none;
+}
+
+.mobileMenu li a{
+  color: #ed9121;
+  text-decoration: none;
+}
+
+.mobileMenu li{
+  margin: 30px;
+}
+
+#navbar h5, #logoM{
+  display: none;
+}
 
 
+
+@media screen and (max-width: 768px)  {
+
+  header nav{
+    display: none;
+  }
+
+  #navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #1b5583;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  #logoM{
+    display: block;
+    margin: 5px;
+  }
+
+  #navbar h5{
+    display: block;
+    align-self: center;
+    color: #ed9121;
+    font-size: 1rem;
+  }
+
+  #hamIcon{
+    display: block;
+  }
 
   .equipoDetallado span{
     width: 100%;
@@ -850,6 +941,7 @@ footer p{
   body{
     min-width: fit-content;
   }
+
 }
 
 /* @media screen and (min-width: 481px) and (max-width: 768px)  {
