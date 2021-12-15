@@ -52,7 +52,7 @@ img{
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: black;
+  color: #ed9121;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -68,11 +68,12 @@ img{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #1b5483d3;
 }
 
 /* Caption text */
 .text {
+  display: none;
   color: black;
   font-size: 15px;
   padding: 8px 12px;
@@ -97,7 +98,7 @@ img{
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #1b5583;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -145,7 +146,7 @@ img{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2e5090;
+  background: #ed9121;
 }
 
 /* Handle on hover */
