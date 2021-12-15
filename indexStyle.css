@@ -928,7 +928,8 @@ footer p{
     display: block;
     align-self: center;
     color: #ed9121;
-    font-size: 1rem;
+    font-size: 1em;
+    width: 50%;
   }
 
   #hamIcon{
@@ -979,6 +980,10 @@ footer p{
   .Contacto h2, span, button {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+  }
+
+  .Contacto form{
+    height: 100%;
   }
 
   #map{
