@@ -846,8 +846,8 @@ footer p{
 }
 
 .open .bar1{
-  -webkit-transform: rotate(45deg) translate(-6px, 30px);
-  transform: rotate(45deg) translate(-6px, 21px);
+  -webkit-transform: rotate(45deg) translate(-4px, 30px);
+  transform: rotate(45deg) translate(-4px, 21px);
 }
 
 .open .bar2{
@@ -855,8 +855,8 @@ footer p{
 }
 
 .open .bar3{
-  -webkit-transform: rotate(-45deg) translate(-6px, -25px);
-  transform: rotate(-45deg) translate(-6px, -23px);
+  -webkit-transform: rotate(-45deg) translate(-4px, -25px);
+  transform: rotate(-45deg) translate(-4px, -23px);
 }
 
 .open .mobileMenu{
@@ -869,7 +869,7 @@ footer p{
 .mobileMenu{
   display: none;
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
@@ -885,6 +885,10 @@ footer p{
 
 .mobileMenu li{
   margin: 30px;
+}
+
+.mobileMenu ul{
+  margin: 0;
 }
 
 #navbar h5, #logoM{
@@ -928,12 +932,13 @@ footer p{
     display: block;
     align-self: center;
     color: #ed9121;
-    font-size: 1em;
+    font-size: 0.9em;
     width: 50%;
   }
 
   #hamIcon{
     display: block;
+    margin-right: 8vw;
   }
 
   /* PAGINA */
