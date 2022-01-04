@@ -674,9 +674,9 @@ background-color: #fbceb1;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.61);
 }
 
-#map{
-  height: 60%;
-  width: 80%;
+.Contacto iframe{
+  min-height: 500px;
+  width: 90%;
 }
 
 #mapas{
@@ -685,8 +685,8 @@ background-color: #fbceb1;
   grid-row: 2 / span 4;
   grid-column: 3 / span 1;
   display: flex;
-  justify-self: center;
   flex-direction: column;
+  justify-self: center;
   align-items: center;
 }
 
@@ -711,8 +711,8 @@ background-color: #fbceb1;
 }
 
 #wpp{
-  align-self: center;
   width: 100px;
+  padding: 0;
 }
 
 .Contacto a {
@@ -1015,6 +1015,16 @@ footer p{
 
   .equipoDetallado span p{
     padding: 10px;
+  }
+
+  .Contacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Contacto form select{
+    min-width: 232.8px;
   }
 }
 
