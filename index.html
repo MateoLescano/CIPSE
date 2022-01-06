@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="indexStyle.css">
 
     <title>CIPSE</title>
@@ -25,86 +26,100 @@
 
 <body>
 
-    <div class="HeaderHidden"></div>
+    <div class="invisible"></div>
     
-    <header id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
 
-        <nav>
-        <ul>
-            <li><a id="logo" href=#Inicio><img src="logo.png"></a></li>
-            <li><a href=#EMDR>¿Qué es EMDR?</a></li>
-            <li><a href=#Equipo>Equipo</a></li>
-            <li><a href=#Formacion>Formación</a></li>
-            <li><a href=#Tratamiento>Tratamiento</a></li>
-            <li><a href=#FAQ>Preguntas Frecuentes</a></li>
-            <li><a href=#Contacto>Contacto</a></li>
-            <li><a href=#Recursos>Recursos</a></li>
-            <li><a href=#Foro>Foro</a></li>
-        </ul>
-    </nav>
-    
-    <img id="logoM" src="logo.png">
-
-        <div id="hamIcon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobileMenu">
-                <li><a href=#EMDR>¿Qué es EMDR?</a></li>
-                <li><a href=#Equipo>Equipo</a></li>
-                <li><a href=#Formacion>Formación</a></li>
-                <li><a href=#Tratamiento>Tratamiento</a></li>
-                <li><a href=#FAQ>Preguntas Frecuentes</a></li>
-                <li><a href=#Contacto>Contacto</a></li>
-                <li><a href=#Recursos>Recursos</a></li>
-                <li><a href=#Foro>Foro</a></li>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="" width="50" height="40">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active mx-4" aria-current="page" href="#">¿Qué es EMDR?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-4" aria-current="page" href="#">Equipo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle mx-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Formación
+                </a>
+                <ul class="dropdown-menu mx-4" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Cursos EMDR</a></li>
+                  <li><a class="dropdown-item" href="#">Cursos de Trauma</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Ver todos los cursos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-4" aria-current="page" href="#">Tratamiento</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active mx-4" aria-current="page" href="#">Preguntas Frequentes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active mx-4" aria-current="page" href="#">Contactanos</a>
+            </li>
             </ul>
+          </div>
         </div>
-
-    </header>
-
-    
+      </nav>
 
     
-    <div class="Inicio" id="Inicio">
- 
-        <div class="slideshow-container">
+    
+        <section id="cont-slider">	
+            
+            <ul id="slider">
+                
+                <li style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider" >
+                    <div>
+                    <h2>Emprendimiento empresarial</h2>
+                <p>Descubra en qué consiste el emprendimiento empresarial por medio de 5 estrategias fundamentales.</p>
+                <a href="#" class="btnSlider">Ver más</a>
+                </div>
+                </div>
+                </li>
+                <li style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); ">
+                <div class="content_slider" >
+                    <div>
+                    <h2>Negocios</h2>
+                <p>Recursos, guías, herramientas y consejos para emprender, crear tu empresa o iniciar un negocio exitoso</p>
+                <a href="#" class="btnSlider">Ver más</a>
+                </div>
+                </div>
+                </li>
+                <li style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); ">
+                <div class="content_slider" >
+                    <div>
+                    <h2>Estrategias de negocio</h2>
+                <p>Las estrategias de negocio representan planes o métodos...</p>
+                <a href="#" class="btnSlider">Ver más</a>
+                </div>
+                </div>
+                </li>
+            </ul>
 
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="hero.png">
-                <div class="text">Bienvenidx a CIPSE!</div>
-              </div>
+            <div class="flechas">
+                <a id="arrowP" href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+                <span class="puntos">
+                    <ul class="listslider">
+                        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                        <li><a itlist="itList_1" href="#"></a></li>
+                        <li><a itlist="itList_2" href="#"></a></li>
+                    </ul>
+                </span>
+                <a id="arrowN" href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+            </div>
 
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="maxresdefault.jpg" style="width:100%">
-              <div class="text">Bienvenido a CIPSE</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="abc.jpg" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-            
-            <script src="jsSlideshow.js"></script>
+           
+            </section>
 
-    </div>
 
 
     <div class="EMDR" id="EMDR">
@@ -337,7 +352,10 @@
     
     </footer>
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script defer src="functions.js"></script>
     <script src="mobileNavBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
