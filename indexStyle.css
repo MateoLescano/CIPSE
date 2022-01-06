@@ -37,6 +37,7 @@ img{
     height: 100%;
 }
 #slider {
+  margin: 0;
     position: relative;
     display: block;
     width: 100%;
@@ -62,24 +63,27 @@ img{
     opacity: 0;
 }
 
-.control{
-  display: absolute;
-  z-index: 10;
-  
-}
-
 .flechas{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
   height: fit-content;
+}
+
+.puntos{
+  display: none;
 }
 
 
 #arrowP, #arrowN{
     font-size: 30pt;
     /* color: rgba(204, 204, 204, 0.65); */
-    color: grey;
+    color: #b7410e9c;
     width: fit-content;
     cursor: pointer;
     z-index: 2; 
@@ -212,6 +216,7 @@ nav.navbar.navbar-expand-lg.navbar-dark{
   z-index: 4;
   background-color: #1b5583;
   padding: 0;
+  transition: 0.3s;
 }
 
 a.nav-link.active{
