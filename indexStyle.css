@@ -16,6 +16,8 @@ a{
 
 h2{
   font-size: 2em;
+
+  font-weight: 700;
 }
 
 h3{
@@ -277,12 +279,12 @@ body{
 .EMDR {
   height: 100%;
   min-height: 100vh;
-  background: linear-gradient(180deg, white, #fbceb1);
   width: 100%;
   display: grid;
   grid-area: 1 / 1 / 2 / 2;
   align-items: center;
   justify-items: center;
+
 }
 
 .EMDR h2{
@@ -329,6 +331,10 @@ body{
   justify-items: center;
   align-items: center;
   grid-template-rows: 1fr 2fr 3fr 1fr;
+  background-image: url("test5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Equipo h2{
@@ -418,7 +424,6 @@ body{
   justify-items: center;
   align-items: center;
   grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
-  background-color: #fbceb1;
 }
 
 .Formacion img{
@@ -501,8 +506,10 @@ body{
   height: 100%;
   min-height: 100vh;
   width: 100%;
-  /* background-color: #faa499;
-background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%); */
+  background-image: url("test.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -512,6 +519,7 @@ background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%)
 .Tratamiento h2 {
   height: fit-content;
 }
+
 
 .Tratamiento p{
   padding: 20px;
@@ -551,7 +559,6 @@ background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%)
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
-  background-color: #fbceb1;
 }
 
 .FAQ span{
@@ -584,7 +591,7 @@ background-image: linear-gradient(319deg, #faa499 0%, #f7dd85 37%, #ffc55c 100%)
 }
 
 #faq2, #faq4 {
-background-color: #fbceb1;
+background-color: #E1DBD8;
   height: fit-content;
 }
 
@@ -598,6 +605,11 @@ background-color: #fbceb1;
   grid-area: 1/1/4/3;
   grid-template-rows: 1fr 1fr 1fr 2fr;
   grid-template-columns: 1fr 1fr 2fr;
+  /* background-color: #fbceb1; */
+  background-image: url("test2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Contacto label {
@@ -862,73 +874,6 @@ footer p{
   justify-content: space-around;
 }
 
-#hamIcon{
-  cursor: pointer;
-  display: none;
-  height: 100%;
-  width: fit-content;
-  margin-top: 1%;
-  margin-right: 5%;
-}
-
-#hamIcon div {
-  width: 60px;
-  height: 4px;
-  background-color: #ed9121;
-  margin: 8px 0;
-  transition: 0.4s;
-}
-
-.open .bar1{
-  -webkit-transform: rotate(45deg) translate(-4px, 30px);
-  transform: rotate(45deg) translate(-4px, 21px);
-}
-
-.open .bar2{
-  opacity: 0;
-}
-
-.open .bar3{
-  -webkit-transform: rotate(-45deg) translate(-4px, -25px);
-  transform: rotate(-45deg) translate(-4px, -23px);
-}
-
-.open .mobileMenu{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.mobileMenu{
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
-  height: fit-content;
-  background-color: #1b5583;
-  list-style-type: none;
-}
-
-.mobileMenu li a{
-  color: #ed9121;
-  text-decoration: none;
-}
-
-.mobileMenu li{
-  margin-top: 18px;
-  margin-bottom: 18px;
-}
-
-.mobileMenu ul{
-  margin: 0;
-}
-
-#navbar h5, #logoM{
-  display: none;
-}
 
 
 
@@ -947,33 +892,6 @@ footer p{
 
   .numbertext{
     color: white;
-  }
-
-  #navbar{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #1b5583;
-    justify-content: space-between;
-    align-content: center;
-  }
-
-  #logoM{
-    display: block;
-    margin: 5px;
-  }
-
-  #navbar h5{
-    display: block;
-    align-self: center;
-    color: #ed9121;
-    font-size: 0.9em;
-    width: 50%;
-  }
-
-  #hamIcon{
-    display: block;
-    margin-right: 8vw;
   }
 
   /* PAGINA */
@@ -1048,6 +966,14 @@ footer p{
 
   .equipoDetallado span p{
     padding: 10px;
+  }
+
+  .Contacto button{
+    opacity: 1;
+  }
+
+  #tituloMapa{
+    color: honeydew;
   }
 
   .Contacto form{
