@@ -84,7 +84,6 @@ img{
 
 #arrowP, #arrowN{
     font-size: 30pt;
-    /* color: rgba(204, 204, 204, 0.65); */
     color: #b7410e9c;
     width: fit-content;
     cursor: pointer;
@@ -154,7 +153,6 @@ img{
     bottom: 5%;
     list-style: none;
     z-index: 2;
-    /* transform: translateX(-50%); */
 }
 .listslider li {
     border-radius: 50%;
@@ -351,6 +349,7 @@ body{
   grid-row: 2 / span 1;
   grid-column: 1 / span 3;
   justify-self: center;
+  text-align: center;
 }
 
 .Equipo #eq1 {
@@ -407,6 +406,7 @@ body{
 
 .Equipo span{
   width: 100%;
+  height: 100%;
 }
 
 .Equipo a{
