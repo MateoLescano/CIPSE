@@ -953,16 +953,29 @@ footer p{
 .EntrEMDR .Cp1{
   grid-row: 3 / span 1;
   grid-column: 1 / span 1;
-  justify-self: center;
-
-  align-self: flex-start;
+  justify-self: justify;
+  align-self: baseline;
 }
+
+.EntrEMDR ul{
+  margin-left: 25%;
+}
+
+.EntrEMDR li {
+  padding: 5px;
+}
+
+.EntrEMDR ul, li {
+  width: fit-content;
+}
+
 
 .EntrEMDR .Cp2{
   grid-row: 3 / span 1;
   grid-column: 2 / span 1;
   justify-self: center;
-  align-self: flex-start;
+  align-self: baseline;
+  text-align: justify;
 }
 
 .EntrEMDR button{
@@ -1098,6 +1111,13 @@ footer p{
   .EntrEMDR{
     display: flex;
     flex-direction: column;
+  }
+
+  .EntrEMDR .Cp1, .EntrEMDR .Cp2{
+    padding: 5%;
+  }
+  .EntrEMDR ul{
+    margin: 0;
   }
 }
 

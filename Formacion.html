@@ -82,24 +82,32 @@
         </p>
         <div id="Cparte1" class="Cp1">
             <h4>Fechas de entrenamientos EMDR Parte 1 durante 2022:</h4>
-            <p>4, 5, 6, 11, 12 y 13 de <b>MARZO</b> <br>
-               22, 23, 24, 29 y 30 de <b>ABRIL</b>  <br>
-                1ero de <b>MAYO</b>  <br>
-                3, 4, 5, 10, 11 y 12 de <b>JUNIO</b>  <br>
-                29, 30 y 31 de <b>JULIO</b> <br>
-                5, 6 y 7 de <b>AGOSTO</b><br>
-                28, 29 y 30 de <b>OCTUBRE</b> <br>
-                4, 5 y 6 de <b>NOVIEMBRE</b>
-            </p>
+            <ul>
+              <li><b> 4, 5 y 6 de Marzo </b> (Semana 9)</li>
+              <li><b>11, 12 y 13 de Marzo </b> (Semana 10)</li>
+              <li><b>22, 23 y 24 de Abril</b> (Semana 16) </li>
+              <li><b>29, 30 (Abril) y 1ero de Mayo </b> (Semana 17)</li>
+              <li><b>3, 4 y 5 de Junio</b> (Semana 22)</li>
+              <li><b>10, 11 y 12 de Junio </b> (Semana 23)</li>
+              <li><b>29, 30 y 31 de Julio</b> (Semana 30)</li>
+              <li><b>5, 6 y 7 de Agosto</b> (Semana 31)</li>
+              <li><b> 4, 5 y 6 de Noviembre</b> (Semana 43)</li>
+              
+            </ul>
         </div>
         <div id="Cparte2" class="Cp2">
             <h4>Fechas de entrenamientos EMDR Parte 2 durante 2022:</h4>
-            <p>25, 26 y 27 de <b>FEBRERO</b>  <br>
-                4, 5 y 6 de <b>MARZO</b>   <br>
-                6, 7, 8, 13, 14 y 15 de <b>MAYO</b>  <br>
-                2, 3, 4, 9, 10 y 11 de <b>SEPTIEMBRE</b> <br>
-                2, 3, 4 y 9, 10 y 11 de <b>DICIEMBRE</b>
-            </p>
+            <ul>
+              <li><b>25, 26 y 27 de Febrero</b> (Semana 8)</li>
+              <li><b>4, 5 y 6 de Marzo</b> (Semana 9)</li>
+              <li><b>6, 7 y 8 de Mayo</b> (Semana 18)</li>
+              <li><b> 13, 14 y 15 de Mayo</b> (Semana 19)</li>
+              <li><b>2, 3 y 4 de Septiembre</b> (Semana 35)</li>
+              <li><b> 9, 10 y 11 de Septiembre</b> (Semana 36)</li>
+              <li><b>2, 3 y 4 de Diciembre </b> (Semana 48)</li>
+              <li><b>9, 10 y 11 de Diciembre</b> (Semana 49)</li>
+              
+            </ul>
         </div>
 
         <button class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modalEMDR">Pre-Inscripción para Cursos EMDR</button>
@@ -154,17 +162,18 @@
                               </select>
                             </div>
 
-                            <div class="col-6 text-center">
-                                <label for="mes">Mes</label>
-                                <input type="month" id="mes" name="mes" min="2022-01" max="2022-12" required>
+                            <div class="col-12 text-center">
+                                <label for="mes">Semana del curso</label>
+                                <br>
+                                <input type="week" id="mes" name="mes" min="2022-01" max="2022-12" required>
                             </div>
           
             
-                            <div class="col-6 text-center">
+                            <!-- <div class="col-6 text-center">
                               <label for="Dia">Día</label>
                               <br>
                               <input type="number" id="Dia" name="Dia" min="1" max="31" >
-                            </div>
+                            </div> -->
             
                             <div class="col-12 text-center">
                               <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
