@@ -279,7 +279,7 @@ body{
   min-height: 100vh;
   width: 100%;
   display: grid;
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 3;
   align-items: center;
   justify-items: center;
 
@@ -287,7 +287,7 @@ body{
 
 .EMDR h2{
   grid-row: 1 / span 1;
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
   justify-self: center;
   height: fit-content;
 }
@@ -296,11 +296,11 @@ body{
   font-size: 1.2em;
   padding: 0px 20px 0px 20px;
   grid-row: 2 / span 1;
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
   justify-self: center;
 }
 
-.EMDR iframe {
+#vid1 {
   grid-row: 3 / span 1;
   grid-column: 1 / span 1;
   justify-self: center;
@@ -308,9 +308,15 @@ body{
 
 .EMDR ul {
   grid-row: 3 / span 1;
-  grid-column: 2 / span 1;
+  grid-column: 3 / span 1;
   justify-self: center;
   list-style-type: none;
+}
+
+#vid2 {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  justify-self: center;
 }
 
 .EMDR li {
@@ -421,10 +427,10 @@ body{
   min-height: 100vh;
   width: 100%;
   display: grid;
-  grid-area: 1 / 1 / 5 / 2;
+  grid-area: 1 / 1 / 6 / 2;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1r 2fr 1fr 2fr 1fr;
 }
 
 .Formacion img{
@@ -444,57 +450,68 @@ body{
   height: fit-content;
 }
 
-.Formacion #img1{
+.Formacion p{
   grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  justify-self: center;
+  height: fit-content;
+  padding: 25px;
+  text-align: center;
+}
+
+.Formacion #img1{
+  grid-row: 3 / span 1;
   grid-column: 1 / span 1;
   justify-self: center;
 }
 .Formacion #img2 {
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
   grid-column: 2 / span 1;
   justify-self: center;
 }
 
 .Formacion #titulo1{
-  grid-row: 3 / span 1;
+  grid-row: 4 / span 1;
   grid-column: 1 / span 1;
   justify-self: center;
   align-self: center;
 }
 
 .Formacion #titulo2{
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-  justify-self: center;
-  align-self: center;
-}
-
-.Formacion #lista1{
-  grid-row: 4 / span 1;
-  grid-column: 1 / span 1;
-  justify-self: center;
-  align-self: center;
-}
-
-.Formacion #lista2{
   grid-row: 3 / span 1;
   grid-column: 2 / span 1;
   justify-self: center;
   align-self: center;
 }
 
-.Formacion #link1 {
+.Formacion #lista1{
   grid-row: 5 / span 1;
   grid-column: 1 / span 1;
   justify-self: center;
   align-self: center;
 }
 
-.Formacion #link2 {
-  grid-row: 5 / span 1;
+.Formacion #lista2{
+  grid-row: 4 / span 1;
   grid-column: 2 / span 1;
   justify-self: center;
   align-self: center;
+}
+
+.Formacion #link1 {
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 1;
+  justify-self: center;
+  align-self: center;
+  margin: 6vh;
+}
+
+.Formacion #link2 {
+  grid-row: 6 / span 1;
+  grid-column: 2 / span 1;
+  justify-self: center;
+  align-self: center;
+  margin: 6vh;
 }
 
 .Formacion ul a {
@@ -879,9 +896,9 @@ footer p{
   display: flex;
   flex-direction: column;
   text-align: center;
-
   font-family: 'Nunito', sans-serif;
 }
+
 .EMDRfull p{
   padding: 20px;
 }
@@ -894,6 +911,75 @@ footer p{
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+.Formacionfull{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.Formacionfull p{
+  padding: 20px;
+}
+
+.EntrEMDR{
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-area: 1 / 1 / 4 / 2;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.EntrEMDR h3{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+.EntrEMDR p{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+.EntrEMDR .Cp1{
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+  justify-self: center;
+
+  align-self: flex-start;
+}
+
+.EntrEMDR .Cp2{
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  justify-self: center;
+  align-self: flex-start;
+}
+
+.EntrEMDR button{
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+.SuperV, .FormTyE, .FormT {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.SuperV, .FormT{
+  background-color: #E1DBD8;
+  }
+  
 
 
 
