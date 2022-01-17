@@ -102,7 +102,83 @@
             </p>
         </div>
 
-        <button class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modalTurno">Pre-Inscripción para Cursos</button>
+        <button class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modalEMDR">Pre-Inscripción para Cursos EMDR</button>
+        
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalEMDR" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Pre-Inscripción para Cursos EMDR</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form id="formEMDR" action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
+
+                            <input type="hidden" name="_template" value="table">
+
+                            <div class="col-12 text-center">
+                              <h4>Datos Personales</h4>
+                            </div>
+
+                            <div class="col text-center">
+                              <label for="Nombre">Nombre</label>
+                              <br>
+                              <input type="text" id="Nombre" name="Nombre" required placeholder="*">
+                            </div>
+            
+                            <div class="col text-center">
+                              <label for="Mail">Mail</label>
+                              <br>
+                              <input type="email" id="Mail" name="Mail" required placeholder="*">
+                            </div>
+            
+                            <div class="col text-center">
+                              <label for="Telefono">Teléfono</label>
+                              <br>
+                              <input type="tel" id="Telefono" name="Telefono">
+                            </div>
+
+                            <div class="col-12 text-center">
+                              <h4>Datos del curso</h4>
+                              <p>Las fechas estan sujetas a disponibilidad. Al enviar la pre-inscripción será contactado a la brevedad para confirmar la inscripción al curso.</p>
+                            </div>
+
+                            <div class="col-12 text-center">
+                              <label for="Asunto">Curso</label>
+                              <br>
+                              <select name="Asunto" id="Asunto">
+                                  <option value="parte1">EMDR Parte 1</option>
+                                  <option value="part2">EMDR Parte 2</option>
+                                  <option value="otro">Otro</option>
+                              </select>
+                            </div>
+
+                            <div class="col-6 text-center">
+                                <label for="mes">Mes</label>
+                                <input type="month" id="mes" name="mes" min="2022-01" max="2022-12" required>
+                            </div>
+          
+            
+                            <div class="col-6 text-center">
+                              <label for="Dia">Día</label>
+                              <br>
+                              <input type="number" id="Dia" name="Dia" min="1" max="31" >
+                            </div>
+            
+                            <div class="col-12 text-center">
+                              <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
+                            </div>
+          
+                          
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
     </div>
 
     <div class="SuperV">
@@ -164,8 +240,8 @@
 
     
     <script src="mobileNavBar.js"></script>
+    <script src="mesMin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 
 
 </body>
