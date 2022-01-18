@@ -79,34 +79,26 @@
             La práctica o facilitación, a cargo de los facilitadores, se desarrolla de 9 a 17 hrs. 
             Los facilitadores trabajan con sub-grupos de máximo 6 personas en formación. 
             Los entrenandos deben cumplir la práctica grupal, habitualmente de 1 hora y la práctica en duplas o tríadas de hasta 3 horas y adicionalmente, podrán ser observadores de la práctica de una segunda dupla o tríada de personas en formación aumentando la exposición de aprendizaje.
+            <br><br>Cada entrenamiento consiste de dos fines de semana y un total de 6 dias.
         </p>
         <div id="Cparte1" class="Cp1">
             <h4>Fechas de entrenamientos EMDR Parte 1 durante 2022:</h4>
             <ul>
-              <li><b> 4, 5 y 6 de Marzo </b> (Semana 9)</li>
-              <li><b>11, 12 y 13 de Marzo </b> (Semana 10)</li>
-              <li><b>22, 23 y 24 de Abril</b> (Semana 16) </li>
-              <li><b>29, 30 (Abril) y 1ero de Mayo </b> (Semana 17)</li>
-              <li><b>3, 4 y 5 de Junio</b> (Semana 22)</li>
-              <li><b>10, 11 y 12 de Junio </b> (Semana 23)</li>
-              <li><b>29, 30 y 31 de Julio</b> (Semana 30)</li>
-              <li><b>5, 6 y 7 de Agosto</b> (Semana 31)</li>
-              <li><b> 4, 5 y 6 de Noviembre</b> (Semana 43)</li>
-              
+              <li>4, 5, 6 y 11, 12, 13 de <b>Marzo</b></li> 
+              <li>22, 23, 24 y 29, 30 de <b>Abril</b> y 1 de <b>Mayo</b></li>
+              <li>3, 4, 5 y 10, 11, 12 de <b>Junio</b></li>
+              <li>29, 30, 31 de <b>Julio</b> y 5, 6, 7 de <b>Agosto</b></li>
+              <li>28, 29, 30 de <b>Octubre</b> y 4, 5, 6 de <b>Noviembre</b></li>
             </ul>
         </div>
         <div id="Cparte2" class="Cp2">
             <h4>Fechas de entrenamientos EMDR Parte 2 durante 2022:</h4>
             <ul>
-              <li><b>25, 26 y 27 de Febrero</b> (Semana 8)</li>
-              <li><b>4, 5 y 6 de Marzo</b> (Semana 9)</li>
-              <li><b>6, 7 y 8 de Mayo</b> (Semana 18)</li>
-              <li><b> 13, 14 y 15 de Mayo</b> (Semana 19)</li>
-              <li><b>2, 3 y 4 de Septiembre</b> (Semana 35)</li>
-              <li><b> 9, 10 y 11 de Septiembre</b> (Semana 36)</li>
-              <li><b>2, 3 y 4 de Diciembre </b> (Semana 48)</li>
-              <li><b>9, 10 y 11 de Diciembre</b> (Semana 49)</li>
-              
+              <li>25, 26, 27 de <b>Febrero</b> y 4, 5, 6 de <b>Marzo</b></li> 
+              <li>6, 7, 8 y 13, 14, 15 de <b>Mayo</b></li>
+              <li>3, 4, 5 y 10, 11, 12 de <b>Junio</b></li>
+              <li>2, 3, 4 y 9, 10, 11 de <b>Septiembre</b></li>
+              <li>2, 3, 4 y 9, 10, 11 <b>Noviembre</b></li>
             </ul>
         </div>
 
@@ -155,25 +147,20 @@
                             <div class="col-12 text-center">
                               <label for="Asunto">Curso</label>
                               <br>
-                              <select name="Asunto" id="Asunto">
-                                  <option value="parte1">EMDR Parte 1</option>
-                                  <option value="part2">EMDR Parte 2</option>
-                                  <option value="otro">Otro</option>
+                              <select id="SelectCurso" name="Asunto">
+                                  <option value="0">-</option>
+                                  <option value="c1">EMDR Parte 1</option>
+                                  <option value="c2">EMDR Parte 2</option>
                               </select>
                             </div>
 
-                            <div class="col-12 text-center">
-                                <label for="mes">Semana del curso</label>
-                                <br>
-                                <input type="week" id="mes" name="mes" min="2022-01" max="2022-12" required>
-                            </div>
-          
-            
-                            <!-- <div class="col-6 text-center">
-                              <label for="Dia">Día</label>
+                            <div id="divFechas" class="col-12 text-center">
+                              <label for="FechaC">Fecha</label>
                               <br>
-                              <input type="number" id="Dia" name="Dia" min="1" max="31" >
-                            </div> -->
+                                <!-- <label for="fecha">Semana del curso</label>
+                                <br>
+                                <input type="week" id="fecha" name="fecha" min="2022-01" max="2022-12" required> -->
+                            </div>
             
                             <div class="col-12 text-center">
                               <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
@@ -249,7 +236,7 @@
 
     
     <script src="mobileNavBar.js"></script>
-    <script src="mesMin.js"></script>
+    <script src="optionsSelect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
