@@ -57,9 +57,17 @@
             <li class="nav-item">
                 <a class="nav-link active mx-3" aria-current="page" href="index.html#Contacto">Contactanos</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#">Recursos</a>
-            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle mx-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recursos
+                 </a>
+                 <ul class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                   <li><a class="dropdown-item" href="#">Recursos Generales</a></li> <!-- Sin Restriccion -->
+                   <li><a class="dropdown-item" href="#">Psicoeducación</a></li> <!-- Sin Restriccion -->
+                   <li><a class="dropdown-item" href="#">Entrenamiento EMDR</a></li> <!-- Con restriccion -->
+                   <li><a class="dropdown-item" href="#">Trauma</a></li> <!-- Con restriccion -->
+                 </ul>
+          </li>
             <li class="nav-item">
                 <a class="nav-link active mx-3" aria-current="page" href="#">Foro</a>
             </li>
@@ -194,11 +202,155 @@
         <br>Mientras dure la pandemia, se mantendrán las supervisiones exclusivamente en formato a distancia.
         <br>Para conocer las fechas de supervisiones institucionales programadas (ver aquí1), para consultar por supervisiones privadas y/o individuales, para confirmar asistencia y para realizar consultas puede escribir a: contactocipse@gmail.com. 
         </p>
+
+        <button class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modalSuperV">Pre-Inscripción para Supervisión Básica</button>
+        
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalSuperV" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Pre-Inscripción para Supervisión Básica</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form id="formEMDR" action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
+
+                            <input type="hidden" name="_template" value="table">
+
+                            <div class="col-12 text-center">
+                              <h4>Datos Personales</h4>
+                            </div>
+
+                            <div class="col text-center">
+                              <label for="Nombre">Nombre y Apellido</label>
+                              <br>
+                              <input type="text" id="Nombre" name="Nombre" required placeholder="*">
+                            </div>
+
+                            <div class="col text-center">
+                              <label for="profesion">Profesión</label>
+                              <br>
+                              <input type="text" id="profesion" name="profesion" required placeholder="*">
+                            </div>
+            
+                            <div class="col text-center">
+                              <label for="Mail">Mail</label>
+                              <br>
+                              <input type="email" id="Mail" name="Mail" required placeholder="*">
+                            </div>
+            
+                            <div class="col text-center">
+                              <label for="Telefono">Teléfono</label>
+                              <br>
+                              <input type="tel" id="Telefono" name="Telefono">
+                            </div>
+
+                            <div class="col-12">
+                              <h4>Datos del curso</h4>
+                              <p id="textoEntr">La inscripción está sujeta a la disponibilidad de la fecha elegida. Al enviar la pre-inscripción será contactado a la brevedad para confirmar la inscripción al curso.</p>
+                            </div>
+
+                            <div class="col-12 text-center">
+                              <label for="fechaSB">Semana del curso</label>
+                              <br>
+                              <input type="week" id="fechaSB" name="fechaSB" min="2022-01" max="2022-12" required>
+                            </div>
+            
+                            <div class="col-12 text-center">
+                              <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
+                            </div>
+          
+                          
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
     </div>
+
+    <div class="SuperVA">
+      <h3>Supervisión Avanzada</h3>
+      <p>Una manera de mantenerse actualizado, además de asistir a los cursos y jornadas, es participar regularmente de los encuentros destinados a la supervisión de los casos.
+      Las posibilidades de supervisión son tanto individuales como grupales; presenciales y a distancia.</p>
+
+      <button class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modalSuperVA">Pre-Inscripción para Supervisión Avanzada</button>
+      
+                <!-- Modal -->
+                <div class="modal fade" id="modalSuperVA" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pre-Inscripción para Supervisión Avanzada</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form id="formEMDR" action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
+
+                          <input type="hidden" name="_template" value="table">
+
+                          <div class="col-12 text-center">
+                            <h4>Datos Personales</h4>
+                          </div>
+
+                          <div class="col text-center">
+                            <label for="Nombre">Nombre y Apellido</label>
+                            <br>
+                            <input type="text" id="Nombre" name="Nombre" required placeholder="*">
+                          </div>
+
+                          <div class="col text-center">
+                            <label for="profesion">Profesión</label>
+                            <br>
+                            <input type="text" id="profesion" name="profesion" required placeholder="*">
+                          </div>
+          
+                          <div class="col text-center">
+                            <label for="Mail">Mail</label>
+                            <br>
+                            <input type="email" id="Mail" name="Mail" required placeholder="*">
+                          </div>
+          
+                          <div class="col text-center">
+                            <label for="Telefono">Teléfono</label>
+                            <br>
+                            <input type="tel" id="Telefono" name="Telefono">
+                          </div>
+
+                          <div class="col-12">
+                            <h4>Datos del curso</h4>
+                            <p id="textoEntr">La inscripción está sujeta a la disponibilidad de la fecha elegida. Al enviar la pre-inscripción será contactado a la brevedad para confirmar la inscripción al curso.</p>
+                          </div>
+
+                          <div class="col-12 text-center">
+                            <label for="fechaSB">Semana del curso</label>
+                            <br>
+                            <input type="week" id="fechaSB" name="fechaSB" min="2022-01" max="2022-12" required>
+                          </div>
+          
+                          <div class="col-12 text-center">
+                            <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
+                          </div>
+        
+                        
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+  </div>
 
     
 
-    <div class="FormTyE">
+    <div id="FormTyE" class="FormTyE">
         <h3>Formación Trauma y EMDR </h3>
         <p>La formación en Trauma y EMDR será sobre la base del libro Neurociencias, investigación y EMDR. Un cuaderno para discutir con fundamentos (Lescano, 2022).
             La actividad tiene una cursada mensual de 4 hrs. de duración está diseñada sobre la base de los diferentes capítulos del libro tanto de Trauma como de EMDR. 
@@ -206,6 +358,74 @@
             Los objetivos principales son: 1- conocer las fortalezas del modelo EMDR y sus inconsistencia con el propósito de desarrollar un espíritu crítico, y 2- integrar conceptos provenientes de teorías e investigación en trauma con el propósito de establecer un paralelismo útil para el clínico. 
             Los objetivos secundarios son: 3- conocer los componentes activos de Terapia EMDR, las hipótesis de funcionamiento con el propósito de permitir desarrollar herramientas que permitan sortear dificultades y obstáculos durante el reprocesamiento EMDR.
             La formación estará completamente a cargo del Dr. Lescano y eventuales, docentes invitados.</p>
+
+            <button class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modalTraumaYEMDR">Pre-Inscripción para Trauma y EMDR</button>
+      
+                <!-- Modal -->
+                <div class="modal fade" id="modalTraumaYEMDR" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pre-Inscripción para Trauma y EMDR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="https://formsubmit.co/mateolescano@gmail.com" method="POST" class="row align-items-center g-5">
+
+                          <input type="hidden" name="_template" value="table">
+
+                          <div class="col-12 text-center">
+                            <h4>Datos Personales</h4>
+                          </div>
+
+                          <div class="col text-center">
+                            <label for="Nombre">Nombre y Apellido</label>
+                            <br>
+                            <input type="text" id="Nombre" name="Nombre" required placeholder="*">
+                          </div>
+
+                          <div class="col text-center">
+                            <label for="profesion">Profesión</label>
+                            <br>
+                            <input type="text" id="profesion" name="profesion" required placeholder="*">
+                          </div>
+          
+                          <div class="col text-center">
+                            <label for="Mail">Mail</label>
+                            <br>
+                            <input type="email" id="Mail" name="Mail" required placeholder="*">
+                          </div>
+          
+                          <div class="col text-center">
+                            <label for="Telefono">Teléfono</label>
+                            <br>
+                            <input type="tel" id="Telefono" name="Telefono">
+                          </div>
+
+                          <div class="col-12">
+                            <h4>Datos del curso</h4>
+                            <p id="textoEntr">La inscripción está sujeta a la disponibilidad de la fecha elegida. Al enviar la pre-inscripción será contactado a la brevedad para confirmar la inscripción al curso.</p>
+                          </div>
+
+                          <div class="col-12 text-center">
+                            <label for="fechaSB">Semana del curso</label>
+                            <br>
+                            <input type="week" id="fechaSB" name="fechaSB" min="2022-01" max="2022-12" required>
+                          </div>
+          
+                          <div class="col-12 text-center">
+                            <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
+                          </div>
+        
+                        
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
     </div>
 
     <div class="FormT">
