@@ -72,7 +72,7 @@ img{
 
 .flechas{
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 5%;
   width: 90%;
   display: flex;
@@ -90,6 +90,7 @@ img{
 #arrowP, #arrowN{
     font-size: 30pt;
     color: #b7410e9c;
+    /* color: grey; */
     width: fit-content;
     cursor: pointer;
     z-index: 2; 
@@ -106,15 +107,19 @@ img{
     text-align: center;
 }
 .content_slider h2{
-    font-family: 'arial';
+    font-family: 'Nunito';
     font-size: 30pt;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
+.content_slider h3{
+  font-size: 1.5rem;
+}
 .content_slider p {
-    font-size: 15pt;
-    font-family: 'arial';
+    font-size: 1.5rem;
+    font-family: 'Nunito';
     color: #FFF;
     margin-bottom: 20px;
 }
@@ -192,6 +197,17 @@ img{
 
 
 @media screen and (max-width: 460px){
+
+  #bg2{
+
+  }
+
+
+
+  .content_slider, #cont-slider{
+    height: 100vh;
+  }
+
 	.content_slider h2 {
 	    font-size: 15pt !important;
 	}
@@ -379,6 +395,7 @@ body{
   grid-row: 2 / span 1;
   grid-column: 1 / span 3;
   justify-self: center;
+  text-align: center;
 }
 
 .Equipo #eq1 {
@@ -561,8 +578,9 @@ body{
 
 
 .Tratamiento p{
-  padding: 20px;
-  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: start;
 }
 
 .Tratamiento .CdA{
@@ -571,6 +589,14 @@ body{
   justify-content: space-around;
   align-items: center;
 }
+
+.Tratamiento .CdA textarea{
+  width: 90%;
+}
+
+/* .Tratamiento .CdA p{
+  font-size: 1rem;
+} */
 
 #BtnCdA{
   margin: 20px;
@@ -1033,10 +1059,6 @@ footer p{
 
 #textEntr{
   text-align: start !important;
-}
-
-#MotivoCdA{
-  width: 90%;
 }
 
 input:not(.inputContacto), select:not(.inputContacto), textarea:not(.inputContacto){

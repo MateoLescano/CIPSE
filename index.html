@@ -89,25 +89,34 @@
         <section id="cont-slider">	
             <ul id="slider">
                 
-                <li style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index:0; opacity: 1;">
+                <li id="bg1" style="background-image: url('https://cdn.pixabay.com/photo/2020/04/15/11/20/telework-5046230_1280.jpg'); z-index:0; opacity: 1;">
                 <div class="content_slider" >
                     <div>
-                    <h2>Bienvenido a CIPSE</h2>
-                <p>Descubra en qué consiste el emprendimiento empresarial por medio de 5 estrategias fundamentales.</p>
+                        <h2>Bienvenido a CIPSE</h2>
+                        <p>Somos una institución con más de 15 años dando formación y supervisión de casos y asistencia a pacientes tanto traumatizados como con otras condiciones y trastornos.<br>
+                            Contamos con formación en Trauma, entrenamiento en Terapia EMDR, Supervisión de casos, Consultoría profesional y Asistencia de pacientes.<br>
+                            La asistencia de pacientes está dirigida tanto a tratamientos de individuos traumatizados que piden tratamiento como complementando el tratamiento de otros profesionales u instituciones.</p>
                 </div>
                 </div>
                 </li>
-                <li style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); ">
+                <li id="bg2" style="background-image: url('https://cdn.pixabay.com/photo/2018/02/20/10/28/business-3167295_960_720.jpg'); ">
                 <div class="content_slider" >
                     <div id="Libro">
                     <h2 ><i>"Neurociencias, Investigación y EMDR"</i></h2>
                     <h3>Autor: Rubén Lescano</h3>
-                <p>Recursos, guías, herramientas y consejos para emprender, crear tu empresa o iniciar un negocio exitoso</p>
+                <p>“Neurociencias cognitivas, investigación y EMDR es un libro de referencia esencial, escrito en español, para los profesionales que tratan el Trastorno de Estrés Postraumático y diagnósticos relacionados.<br>
+                    El Dr. Lescano proporciona una guía completa y excelente para informar a los lectores sobre los componentes y la eficacia de la terapia EMDR.<br>
+                    Lo más importante es que analiza en profundidad la investigación de EMDR a medida que ha evolucionado durante los últimos 30 años.<br>
+                    ¡Un recurso valioso y muy necesario para los profesionales de EMDR!”<br>
+                    </p>
+                    <h3>Robbie Dunton, MA, MS<br>
+                        Director Ejecutivo,<br>
+                        Instituto EMDR de Francine Shapiro</h3>
                 <a href="#" class="btnSlider">Ver más</a>
                 </div>
                 </div>
                 </li>
-                <li style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); ">
+                <li id="bg3" style="background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg'); ">
                 <div class="content_slider" >
                     <div>
                     <h2>Titulo 3</h2>
@@ -205,7 +214,7 @@
         <span id="eq3">
             <h3>Lic. Damián Cuttitta</h3>
 
-            <img src = "https://sharpfocusphoto.com/wp-content/uploads/2020/08/DSC_0275.jpg">
+            <img src="missingPhoto.png">
 
             <p>Licenciado en Psicología. <br>
                 Entrenador EMDR del EMDR Institute (USA) y EMDR IBA Argentina. <br>
@@ -261,7 +270,17 @@
     <div class="Tratamiento" id="Tratamiento">
         <h2>Tratamiento</h2>
 
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>El proceso de tratamiento consta de varios pasos a determinar: <br>
+            Admisión: de 1 a 3 entrevistas de admisión según el caso en la que un profesional experimentado o un profesional supervisado busca determinar un diagnóstico, un esquema o plan de tratamiento y un seguimiento posterior.
+            Durante la admisión se determinará la necesidad de interconsulta con farmacología u otra especialidad, así como ponerse en contacto con profesionales externos al centro con el propósito de conocer el contexto del paciente. <br>
+            Tratamiento propiamente dicho: en caso de ser admitido el profesional que realiza dicha admisión establecerá la derivación a tratamiento, que en este caso puede ser al mismo admisor o a otro profesional del equipo. <br>
+            Durante el tratamiento los profesionales del centro son supervisados regularmente para evaluar si el plan original se está llevando exitosamente o deberían hacerse modificaciones de cualquier tipo. <br>
+            Por otro lado, el mismo paciente en tratamiento puede solicitar al profesional tratante el cambio de plan de trabajo y/o cambio de profesional tratante.
+            El equipo parte de la idea que todos los profesionales desde el director en adelante pueden ser reemplazados por otro profesional del equipo. Excepto que las razones atribuidas para el cambio sean consideradas perjudiciales para el paciente. <br>
+            Una vez cumplido el o los objetivo/s del tratamiento inicial se procederá a: <br>
+            1- Redefinición de nuevos objetivos de tratamiento. <br>
+            2- Alta. <br>
+            3- Seguimiento del caso.</p>
 
         <div class="CdA">
             <h3>¿Querés solicitar una consulta de admisión?</h3>
@@ -284,7 +303,7 @@
                               <h4>Datos del Solicitante</h4>
                             </div>
 
-                            <div class="col-12 text-center">
+                            <div class="col text-center">
                               <label for="Nombre">Nombre y Apellido</label>
                               <br>
                               <input type="text" id="Nombre" name="Nombre" required placeholder="*">
@@ -304,7 +323,14 @@
                                     <option value="M">M</option>
                                     <option value="Otros">Otras Identidades</option>
                                   </select>
-                              </div>
+                            </div>
+
+
+                            <div class="col text-center">
+                            <label for="medicacion">¿Toma algúna medicación?</label>
+                            <br>
+                            <input type="text" id="medicacion" name="medicacion" required placeholder="Si toma, indique cuales">
+                            </div>
 
             
                             <div class="col text-center">
@@ -323,11 +349,10 @@
 
                             <div class="col-12 text-center">
                               <h4>Datos de la Entrevista</h4>
-                              <p id="textoCdA">asdasdasd</p>
                             </div>
 
                             <div class="col-12 text-center">
-                                <label for="MotivoCdA">Motivo de Consulta</label>
+                                <label for="MotivoCdA">Motivo de Consulta (Opcional)</label>
                                 <br>
                                 <textarea id="MotivoCdA" name="MotivoCdA"></textarea>
                             </div>
@@ -351,6 +376,12 @@
                                     <option value="Internet">Internet</option>
                                     <option value="Conocido">Un conocido/a</option>
                                   </select>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <label for="DispH">Días y horarios posibles para asisitira a la entrevista de admisión <br> (entre 60 y 90 minutos)</label>
+                                <br>
+                                <textarea id="DispH" name="DispH" required placeholder="Le recomendamos que indique la mayor amplitud de horarios posibles para la admisión"></textarea>
                             </div>
             
                             <div class="col-12 text-center">
