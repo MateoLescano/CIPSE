@@ -379,10 +379,33 @@
                             </div>
 
                             <div class="col-12 text-center">
-                                <label for="DispH">Días y horarios posibles para asisitira a la entrevista de admisión <br> (entre 60 y 90 minutos)</label>
-                                <br>
-                                <textarea id="DispH" name="DispH" required placeholder="Le recomendamos que indique la mayor amplitud de horarios posibles para la admisión"></textarea>
+                                <h4>Días y horarios posibles para asisitira a la entrevista de admisión <br> (entre 60 y 90 minutos)</h4>
+                                <!-- <textarea id="DispH" name="DispH" required placeholder="Le recomendamos que indique la mayor amplitud de horarios posibles para la admisión"></textarea> -->
                             </div>
+
+                            <div id="cb" class="col ms-5 text-start">
+                                <label><b>Días</b></label><br>
+
+                                <input class="cb" type="checkbox" id="Lunes" name="dia" value="Lunes">
+                                <label for="Lunes"> Lunes</label><br>
+                                <input class="cb" type="checkbox" id="Martes" name="dia" value="Martes">
+                                <label for="Martes"> Martes</label><br>
+                                <input class="cb" type="checkbox" id="Miercoles" name="dia" value="Miercoles">
+                                <label for="Miercoles"> Miércoles</label><br>
+                                <input type="checkbox" id="Jueves" name="dia" value="Jueves">
+                                <label for="Jueves"> Jueves</label><br>
+                                <input type="checkbox" id="Viernes" name="dia" value="Viernes">
+                                <label for="Viernes"> Viernes</label><br>
+                                <input type="checkbox" id="Sabado" name="dia" value="Sabado">
+                                <label for="Sabado"> Sábado</label>
+                              </div>
+            
+              
+                              <div class="col me-5 text-center">
+                                <label for="Disponibilidad">Rango Horario</label>
+                                <br>
+                                <input type="text" id="Disponibilidad" name="Disponibilidad" required placeholder="De 8:00 a 19:00">
+                              </div>
             
                             <div class="col-12 text-center">
                               <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
