@@ -194,15 +194,13 @@ img{
   width: fit-content;
 }
 
+#cont-slider ul{
+  height: 100vh;
+  min-height: 100%;
+}
 
 
 @media screen and (max-width: 460px){
-
-  #bg2{
-
-  }
-
-
 
   .content_slider, #cont-slider{
     height: 100vh;
@@ -349,6 +347,7 @@ body{
   grid-row: 3 / span 1;
   grid-column: 3 / span 1;
   justify-self: center;
+  text-align: start;
   list-style-type: none;
 }
 
@@ -534,6 +533,7 @@ body{
   grid-column: 2 / span 1;
   justify-self: center;
   align-self: center;
+  text-align: start;
 }
 
 .Formacion #link1 {
@@ -1120,10 +1120,17 @@ input:not(.inputContacto), select:not(.inputContacto), textarea:not(.inputContac
     margin-top: 1.5em;
     margin-bottom: 1.5em;
   }
+  .Formacion img{
+    width: 90%;
+  }
 
   .Tratamiento h2, h3, p, button{
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+  }
+
+  #cb{
+    padding-left: 25%;
   }
 
   .FAQ span{
