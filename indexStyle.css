@@ -1071,7 +1071,9 @@ input:not(.inputContacto), select:not(.inputContacto), textarea:not(.inputContac
   border: 2px solid #b7410E;
 }
 
-  
+.fechasSB ul{
+  margin-left: 20%;
+}  
 
 
 
@@ -1199,6 +1201,10 @@ input:not(.inputContacto), select:not(.inputContacto), textarea:not(.inputContac
     padding: 5%;
   }
   .EntrEMDR ul{
+    margin: 0;
+  }
+
+  .fechasSB ul{
     margin: 0;
   }
 }
