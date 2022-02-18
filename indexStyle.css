@@ -256,11 +256,19 @@ nav.navbar.navbar-expand-lg.navbar-dark{
   transition: 0.3s;
 }
 
-a.nav-link.active{
+a.nav-link.active.mx-3{
   /* border: 2px red solid; */
   height: fit-content;
+  width: fit-content;
   margin: 0;
   padding: 10px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#navFAQ{
+  white-space: nowrap;
+  text-overflow: "FAQ";
 }
 
 a.navbar-brand, button.navbar-toggler{
@@ -269,6 +277,10 @@ a.navbar-brand, button.navbar-toggler{
 
 span.navbar-toggler-icon{
   margin: 0;
+}
+
+#liExpanded li a{
+  font-size: 1.3em;
 }
 
 
@@ -308,6 +320,45 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
+.FAB{
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1b5583;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.FAB img{
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.FAB a:hover{
+  background-color: #1b5583;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .FAB {
+    width: 70px;
+    height: 70px;
+    right: 25px;
+  }
+
+  .FAB img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
 
 /* EMDR */
 
@@ -320,6 +371,7 @@ body{
   align-items: center;
   justify-items: center;
 
+  background-color: #E1DBD8;
 }
 
 .EMDR h2{
@@ -373,11 +425,6 @@ body{
   justify-items: center;
   align-items: center;
   grid-template-rows: 1fr 2fr 3fr 1fr;
-  /* background-image: url("fondoEquipo.png"); */
-  background-color: #E1DBD8;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .Equipo h2{
@@ -442,9 +489,9 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 350px;
+  max-width: 250px;
   height: 60%;
-  max-height: 350px;
+  max-height: 250px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -592,16 +639,14 @@ body{
 
 .Tratamiento .CdA textarea{
   width: 90%;
+  min-height: 100px;
 }
 
-/* .Tratamiento .CdA p{
-  font-size: 1rem;
-} */
 
 #BtnCdA{
   margin: 20px;
 
-  background-color: #4682b4;
+  background-color: #b7410E;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -632,6 +677,8 @@ body{
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
+
+  background-color: #E1DBD8;
 }
 
 .FAQ span{
@@ -664,7 +711,7 @@ body{
 }
 
 #faq2, #faq4 {
-background-color: #E1DBD8;
+background-color: white;
   height: fit-content;
 }
 
@@ -1180,7 +1227,7 @@ input:not(.inputContacto), select:not(.inputContacto), textarea:not(.inputContac
   }
 
   #tituloMapa{
-    color: honeydew;
+    /* color: honeydew; */
   }
 
   .Contacto form{

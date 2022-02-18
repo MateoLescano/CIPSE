@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="indexStyle.css">
 
-    <title>CIPSE EMDR</title>
+    <title>CIPSE</title>
     <link rel="shortcut icon" type="image/jpg" href="logo.png"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
 
         <div class="container-fluid">
             <a class="navbar-brand" href="#cont-slider">
-                <img src="logo.png" alt="" width="50" height="40">
+                <img src="logo.png" alt="" width="70" height="60">
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,49 +40,61 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#EMDR">¿Qué es EMDR?</a>
+                <a class="nav-link active mx-3" aria-current="page" href="#EMDR">EMDR</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#Equipo">Equipo</a>
-              </li>
+              
               <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle mx-4" href="Formacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link active dropdown-toggle mx-3" href="Formacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  Formación
                 </a>
-                <ul class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="Formacion.html#CursosEMDR">Cursos EMDR</a></li>
                   <li><a class="dropdown-item" href="Formacion.html#FormTyE">Cursos de Trauma</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="Formacion.html">Ver todos los cursos</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#Tratamiento">Tratamiento</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle mx-3" aria-current="page" href="#Tratamiento" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamiento</a>
+                <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCdA">Solicitar Consulta</a></li>
+                  </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#FAQ">Preguntas frecuentes</a>
-            </li>
+                <a class="nav-link active mx-3" aria-current="page" href="#Equipo">Equipo</a>
+              </li>
             <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#Contacto">Contactanos</a>
+                <a id="navFAQ" class="nav-link active mx-3" aria-current="page" href="#FAQ">Preguntas frecuentes</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle mx-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link active dropdown-toggle mx-3" aria-current="page" href="#Contacto" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
+                <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5491167962497" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                  </ul>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle mx-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Recursos
                    </a>
-                   <ul class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
-                     <li><a class="dropdown-item" href="#">Recursos Generales</a></li> <!-- Sin Restriccion -->
-                     <li><a class="dropdown-item" href="#">Psicoeducación</a></li> <!-- Sin Restriccion -->
-                     <li><a class="dropdown-item" href="#">Entrenamiento EMDR</a></li> <!-- Con restriccion -->
-                     <li><a class="dropdown-item" href="#">Trauma</a></li> <!-- Con restriccion -->
+                   <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Recursos Generales</a></li>
+                     <li><a class="dropdown-item" href="#">Psicoeducación</a></li>
+                     <li><a class="dropdown-item" href="#">Entrenamiento EMDR</a></li> 
+                     <li><a class="dropdown-item" href="#">Trauma</a></li> 
                    </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active mx-3 disabled" aria-current="page" href="#">Foro</a>
-            </li>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link active mx-3 disabled" aria-current="page" href="#">Solicitar Tratamiento</a>
+            </li> -->
             </ul>
           </div>
         </div>
       </nav>
+
+      <!-- FAB -->
+      <div class="FAB">
+        <a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCdA"><img src="fab.png" alt=""></a>
+      </div>
 
     
     
@@ -148,9 +160,7 @@
 
         <h2>¿Qué es EMDR?</h2>
 
-        <p>EMDR es un enfoque diseñado como parte de un plan integral para el tratamiento del trauma psicológico (Shapiro, 2018). 
-            En la actualidad, es considerado una aproximación comprehensiva que integra aspectos de las principales orientaciones en Psicoterapia Psicodinámica, Conductual, Cognitiva, Hipnoterapia, Sistémica, Somática y Experiencial (Shapiro, 2018; Shapiro, 2002; Norcross & Shapiro, 2002).
-            EMDR es una terapia compleja con una serie de procesos y componentes de tratamiento en la cual múltiples mecanismos podrían estar en la base del funcionamiento para producir beneficios.</p>
+        <p>EMDR, de sus siglas en inglés Desensibilización y Reprocesamiento por medio del Movimiento Ocular, es un enfoque diseñado como parte de un plan integral para el tratamiento del trauma psicológico (Shapiro, 2018). En la actualidad, es considerado una intervención terapéutica comprehensiva que integra aspectos de las principales orientaciones en Psicoterapia Conductual, Cognitiva, Psicodinámica, Hipnoterapia, Sistémica, Somática y Experiencial (Shapiro, 2018; Shapiro, 2002; Norcross & Shapiro, 2002). Si bien EMDR tiene la mayor evidencia de efectividad en el tratamiento del Trauma Psicológico, también es efectiva para otros trastornos como la depresión, ansiedad, el trastorno obsesivo y compulsivo, entre otros.</p>
 
         <iframe id="vid1" width="90%" height="50%" src="https://www.youtube.com/embed/Mh5B5m0ksIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </iframe>
@@ -170,74 +180,19 @@
         
     </div>
 
-    <div class="Equipo" id="Equipo">
-
-        <h2>El Equipo</h2>
-
-        <p>CIPSE, cuya sigla representa Centro de Psicoterapias con Soporte Empírico, es una institución formada por profesionales dedicados a la docencia, investigación y asistencia.
-            La asistencia a pacientes puede ser en forma individual o grupal con modelos de tratamientos basados en la evidencia.
-            La formación, entrenamientos y supervisión de profesionales es a través de actividades presenciales y a distancia.
-            En los últimos años CIPSE ha extendido sus actividades de formación a diferentes lugares del país tales como Bariloche, Comodoro Rivadavia, Córdoba, Mendoza, Trelew y Neuquén, entre otras. 
-            <br> Adicionalmente, durante la pandemia ha extendido la formación internacionalmente.  
-            El Centro cuenta con una importante biblioteca especializada en trauma y tratamiento, tanto en volúmenes físicos como virtuales.</p>
-
-
-        <span id="eq2">
-            <h3>Dr. Rubén Lescano</h3>
-
-            <img src = "FotosEquipo/ruben.jpg">
-
-            <p>Presidente CIPSE. <br>
-                Médico Psiquiatra. <br>
-                Psicotraumatólogo Certificado. <br>
-                Entrenador EMDR del EMDR Institute (USA) y EMDR IBA Argentina. <br>
-                Autor de: Neurociencias, Investigación y EMDR. 
-            </p>
-        </span>
-
-        <span id="eq1">
-            <h3>Dr. Lucas Elio González</h3>
-
-            <img src = "FotosEquipo/fotoluqui.jpg">
-
-            <p>Magister en Economía y Gestión en Salud. <br>
-                Facilitador del EMDR Institute (USA). <br>
-                Consultor Aprobado EMDR IBA Argentina.
-            </p>
-        </span>
-
-        
-
-        <span id="eq3">
-            <h3>Lic. Damián Cuttitta</h3>
-
-            <img src="FotosEquipo/Damian.png">
-
-            <p>Licenciado en Psicología. <br>
-                Entrenador EMDR del EMDR Institute (USA) y EMDR IBA Argentina. <br>
-                Especialista en niños y adolescentes.              
-            </p>
-        </span>
-
-        <a href="equipo.html" id="lnk1">Ver equipo completo</a>
-        <a href="equipo.html#asociaciones" id="lnk2">Ver asociaciones colaboradoras</a>
-
-    </div>
+    
 
     <div class="Formacion" id="Formacion">
 
         <h2>Formación</h2>
 
         <p>Contamos con una oferta de entrenamientos certificados de validez internacional y que cumplen con los estándares requeridos por el EMDR Institute Inc. (USA) y la Sociedad Internacional EMDR. <br>
-            Desde y durante la Pandemia del Covid-19 el entrenamiento Básico EMDR ha sido autorizado por el EMDR Institute (USA) para el su desarrollo en formato virtual.
-            Entrenamiento básico tanto presencial como a distancia consta de 2 módulos: Parte 1 y Parte 2, con 5 horas de supervisión después de cada uno de ellos. 
-            La exigencia e intensidad de la formación básica de Terapia EMDR a distancia nos ha obligado a realizarse en dos fines de semanas con una duración aproximadamente de 20 horas cada uno, 3 jornadas de teoría a cargo de los entrenadores de CIPSE, y 3 jornadas de práctica, a cargo de los facilitadores de CIPSE. 
-            El entrenamiento presencial involucra aproximadamente 10 horas de enseñanza teórica y 10 de enseñanza práctica supervisada por Facilitadores especializados. De esta manera se trata de asegurar la incorporación del procedimiento técnico básico.
-            Los entrenamientos en CIPSE, presenciales y a distancia, son dictados por el Lic. Damián Cuttitta, Entrenador Certificado del EMDR Institute (USA) y EMDR IBA Argentina y Dr. Rubén Lescano, Entrenador Certificado del EMDR Institute (USA) y EMDR IBA Argentina y la parte práctica, también denominada "facilitación", es guiada por Facilitadores formados por sus entrenadores y autorizados por el EMDR Institute (USA).
-            Al completar la formación se entregará el Manual actualizado de Entrenamiento Traducido y Actualizado del EMDR Institute Inc. (USA).
-            De esta manera, los entrenados estarán en condiciones de comenzar a trabajar con EMDR desde el primer día posterior a la Parte 1 del entrenamiento básico.  <br>
-            Adicionalmente, para asegurar y mejorar la implementación del procedimiento EMDR en la clínica, los profesionales deberán complementar con 10 horas de supervisión divididas en 5 horas al finalizar cada entrenamiento para obtener la acreditación final.
-            Las horas de supervisión serán acreditadas por los entrenadores o a quienes autoricen para tal fin. </p>
+            Desde y durante la Pandemia por CoViD-19 el Entrenamiento Básico EMDR ha sido autorizado por el EMDR Institute (USA) para su desarrollo en formato virtual. El Entrenamiento básico, tanto presencial como a distancia, consta de 2 módulos: Parte 1 y Parte 2, con 5 horas de supervisión después de cada uno de ellos. <br>
+            La exigencia e intensidad de la formación básica de la Terapia EMDR a distancia nos ha obligado a realizarse el entrenamiento en dos fines de semanas con una duración aproximadamente de 20 horas cada uno, que se distribuyen en 3 jornadas de teoría a cargo de los Entrenadores EMDR de CIPSE, y 3 jornadas de práctica, a cargo de los Facilitadores EMDR de CIPSE. <br>
+            El entrenamiento presencial involucra aproximadamente 10 horas de enseñanza teórica y 10 horas de enseñanza práctica supervisada por los facilitadores especializados. De esta manera, se trata de asegurar la incorporación del procedimiento técnico básico. <br>
+            Los entrenamientos en CIPSE, presenciales y a distancia, son dictados por el Lic. Damián Cuttitta, Entrenador Certificado del EMDR Institute (USA) y EMDR IBA Argentina y el Dr. Rubén Lescano, Entrenador Certificado del EMDR Institute (USA) y EMDR IBA Argentina. La parte práctica, también denominada "facilitación", es guiada por los Facilitadores formados por sus entrenadores y autorizados por el EMDR Institute (USA). <br>
+            Adicionalmente, para asegurar y mejorar la implementación del procedimiento EMDR en la clínica, los profesionales deberán complementar 5 horas de supervisión clínica al finalizar cada una de las partes del entrenamiento para obtener la acreditación final. Las horas de supervisión serán acreditadas por los entrenadores o a quienes ellos autoricen para tal fin. 
+            </p>
 
         
         <img id="img1" src="Curso3.JPG">
@@ -267,17 +222,16 @@
     <div class="Tratamiento" id="Tratamiento">
         <h2>Tratamiento</h2>
 
-        <p>El proceso de tratamiento consta de varios pasos a determinar: <br>
-            Admisión: de 1 a 3 entrevistas de admisión según el caso en la que un profesional experimentado o un profesional supervisado busca determinar un diagnóstico, un esquema o plan de tratamiento y un seguimiento posterior.
-            Durante la admisión se determinará la necesidad de interconsulta con farmacología u otra especialidad, así como ponerse en contacto con profesionales externos al centro con el propósito de conocer el contexto del paciente. <br>
-            Tratamiento propiamente dicho: en caso de ser admitido el profesional que realiza dicha admisión establecerá la derivación a tratamiento, que en este caso puede ser al mismo admisor o a otro profesional del equipo. <br>
+        <p>El proceso de tratamiento consta de varios pasos a determinar:
+            Admisión: de 1 a 3 entrevistas de admisión según sea el caso, en la que un profesional experimentado o un profesional supervisado busca determinar un diagnóstico, un esquema o plan de tratamiento y un seguimiento posterior. Durante la admisión se determinará la necesidad de interconsultar con psiquiatría para evaluar la necesidad o no de iniciar un tratamiento farmacológico, o con otra especialidad, así como ponerse en contacto con profesionales externos al centro con el propósito de conocer el contexto del paciente. <br>
+            Tratamiento propiamente dicho: en caso de ser admitido, el profesional que realiza dicha admisión establecerá la derivación a tratamiento, que en este caso puede ser al mismo admisor o a otro profesional del equipo. <br>
             Durante el tratamiento los profesionales del centro son supervisados regularmente para evaluar si el plan original se está llevando exitosamente o deberían hacerse modificaciones de cualquier tipo. <br>
-            Por otro lado, el mismo paciente en tratamiento puede solicitar al profesional tratante el cambio de plan de trabajo y/o cambio de profesional tratante.
-            El equipo parte de la idea que todos los profesionales desde el director en adelante pueden ser reemplazados por otro profesional del equipo. Excepto que las razones atribuidas para el cambio sean consideradas perjudiciales para el paciente. <br>
+            Por otro lado, el mismo paciente en tratamiento puede solicitar al profesional tratante el cambio de plan de trabajo y/o cambio de profesional tratante. El equipo parte de la idea que todos los profesionales desde el director en adelante pueden ser reemplazados por otro profesional del equipo. Excepto que las razones atribuidas para el cambio sean consideradas perjudiciales para el/la paciente. <br>
             Una vez cumplido el o los objetivo/s del tratamiento inicial se procederá a: <br>
             1- Redefinición de nuevos objetivos de tratamiento. <br>
             2- Alta. <br>
-            3- Seguimiento del caso.</p>
+            3- Seguimiento del caso.
+            </p>
 
         <div class="CdA">
             <h3>¿Querés solicitar una consulta de admisión?</h3>
@@ -317,9 +271,9 @@
                                 <label for="genero">Género</label>
                                 <br>
                                 <select name="genero" id="genero">
-                                    <option value="F">F</option>
-                                    <option value="M">M</option>
-                                    <option value="Otros">Otras Identidades</option>
+                                    <option value="Femenino">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Otres">Otras Identidades</option>
                                   </select>
                             </div>
 
@@ -355,7 +309,7 @@
                                 <textarea id="MotivoCdA" name="MotivoCdA" required placeholder="Es más fácil derivar para las admisiones si conocemos el motivo de su consulta. Si prefiere no decir, por favor aclare."></textarea>
                             </div>
 
-                            <div class="col text-center">
+                            <!-- <div class="col text-center">
                                 <label for="formato">Formato de la entrevista</label>
                                 <br>
                                 <select name="formato" id="formato">
@@ -363,7 +317,7 @@
                                     <option value="Virtual">Virtual</option>
                                     <option value="Sin preferencia">Sin preferencia</option>
                                   </select>
-                            </div>
+                            </div> -->
 
                             <div class="col text-center">
                                 <label for="comollego">¿Cómo conoció CIPSE?</label>
@@ -377,7 +331,7 @@
                             </div>
 
                             <div class="col-12 text-center">
-                                <h4>Días y horarios posibles para asisitira a la entrevista de admisión <br> (entre 60 y 90 minutos)</h4>
+                                <h4>Días y horarios posibles para asisitira a la entrevista VIRTUAL de admisión <br> (entre 60 y 90 minutos)</h4>
                                 <!-- <textarea id="DispH" name="DispH" required placeholder="Le recomendamos que indique la mayor amplitud de horarios posibles para la admisión"></textarea> -->
                             </div>
 
@@ -420,6 +374,60 @@
         
     </div>
 
+    <div class="Equipo" id="Equipo">
+
+        <h2>El Equipo</h2>
+
+        <p>CIPSE, cuya sigla representa Centro Integral de Psicotrauma con Soporte Empírico, es una institución formada por profesionales dedicados a la docencia, investigación y asistencia clínica. 
+            La asistencia a pacientes puede ser en forma individual o grupal, presencial o por telemedicina, con modelos de tratamientos basados en la evidencia. 
+            La formación, entrenamientos y supervisión de profesionales es a través de actividades presenciales y a distancia. En los últimos años CIPSE ha extendido sus actividades de formación a diferentes lugares del país tales como Bariloche, Comodoro Rivadavia, Córdoba, Mendoza, Trelew y Neuquén, entre otras.
+            <br>Adicionalmente, durante la pandemia ha extendido la formación internacionalmente. El Centro cuenta con una importante biblioteca especializada en trauma y su tratamiento, tanto en volúmenes físicos como virtuales.
+            </p>
+
+
+        <span id="eq2">
+            <h3>Dr. Rubén Lescano</h3>
+
+            <img src = "FotosEquipo/ruben.jpg">
+
+            <p>Presidente CIPSE. <br>
+                Médico Psiquiatra. <br>
+                Psicotraumatólogo Certificado. <br>
+                Entrenador EMDR del EMDR Institute (USA) y EMDR IBA Argentina. <br>
+                Autor de: Neurociencias, Investigación y EMDR. 
+            </p>
+        </span>
+
+        <span id="eq1">
+            <h3>Dr. Lucas Elio González</h3>
+
+            <img src = "FotosEquipo/fotoluqui.jpg">
+
+            <p>Médico Especialista en Psiquiatría. <br>
+                Magíster en Economía y Gestión de la Salud. <br>
+                Facilitador del EMDR Institute (USA). <br>
+                Terapeuta y Supervisor Certificado por EMDR IBA Argentina.                
+            </p>
+        </span>
+
+        
+
+        <span id="eq3">
+            <h3>Lic. Damián Cuttitta</h3>
+
+            <img src="FotosEquipo/Damian.png">
+
+            <p>Licenciado en Psicología. <br>
+                Entrenador EMDR del EMDR Institute (USA) y EMDR IBA Argentina. <br>
+                Especialista en niños y adolescentes.              
+            </p>
+        </span>
+
+        <a href="equipo.html" id="lnk1">Ver equipo completo</a>
+        <a href="equipo.html#asociaciones" id="lnk2">Ver asociaciones colaboradoras</a>
+
+    </div>
+
     <div class="FAQ" id="FAQ">
         <h2>Preguntas frecuentes</h2>
 
@@ -427,10 +435,11 @@
 
             <h3>¿Qué es EMDR?</h3>
 
-            <p>EMDR es la sigla en inglés de Desensibilización y Reprocesamiento por medio del Movimiento Ocular con más 30 años desde aparición de la primera publicación por su creadora y desarrolladora la Dra. Francine Shapiro. 
-                EMDR es un tratamiento psicoterapéutico diseñado para tratar a pacientes que sufren síntomas relacionados con el trauma psicológico, ansiedad, depresión y otros trastornos.
-                EMDR es reconocido por su eficacia científicamente demostrada y con más de 1000 publicaciones sobre su efectividad, aplicabilidad en diferentes trastornos y condiciones médico-psicológicas. 
-                Los objetivos centrales en Terapia EMDR son ayudar al paciente: 1) a procesar la información proveniente de experiencias negativas y aprender de ellas, 2) reducir la perturbación emocional de claves de memoria activadoras, llamados disparadores, de síntomas en el presente, 3) integrar y/o desarrollar los recursos del paciente para afrontar las experiencias actuales y favorecer la resolución problemas, y 4) incorporar acciones futuras que le permitan adaptarse adecuadamente a las nuevas situaciones y contextos. </p>
+            <p>EMDR es la sigla en inglés de Desensibilización y Reprocesamiento por medio del Movimiento Ocular, psicoterapia que cuenta con más 30 años de acumulación de evidencia científica desde la aparición de la primera publicación por su creadora y desarrolladora, la Dra. Francine Shapiro. <br>
+                EMDR es un tratamiento psicoterapéutico diseñado para tratar a pacientes que sufren síntomas relacionados con el trauma psicológico, ansiedad, depresión y otros trastornos. <br>
+                EMDR es reconocido por su eficacia científicamente demostrada y con más de 1000 publicaciones sobre su efectividad, aplicabilidad en diferentes trastornos y condiciones médico-psicológicas. <br> 
+                Los objetivos centrales en Terapia EMDR son ayudar al paciente a: 1) procesar la información proveniente de experiencias negativas y aprender de ellas, 2) reducir la perturbación emocional de claves de memoria activadoras, llamados disparadores, de síntomas en el presente, 3) integrar y/o desarrollar los recursos del paciente para afrontar las experiencias actuales y favorecer la resolución problemas, y 4) incorporar acciones futuras que le permitan adaptarse adecuadamente a las nuevas situaciones y contextos.
+                </p>
 
         </span>
 
@@ -438,10 +447,7 @@
 
             <h3>¿Qué es trauma en términos EMDR?</h3>
 
-            <p>Los fundamentos de EMDR son simples. Parte de la idea de que el cerebro involucra un sistema de procesamiento de información natural e innato que se va moldeando con las experiencias. Los seres humanos aprendemos de las experiencias tanto positivas como adversas.
-                Es un sistema que tiende a la integración de la información y la salud. Sin embargo, bajo ciertas condiciones el sistema puede fallar y dejar información guardada disfuncionalmente en las redes de la memoria. 
-                Esa información del pasado es responsable de los síntomas del presente e impide el desarrollo o la utilización de las estrategias de regulación emocional y resolución de problemas. 
-                El procedimiento de Terapia EMDR permitiría la resolución adaptativa de la información permitiendo la recuperación del individuo. </p>
+            <p>Los fundamentos de EMDR son simples. Parte de la idea de que el cerebro posee un sistema de procesamiento de información natural e innato que se va moldeando con las experiencias. Es un sistema que tiende a la integración de la información y la salud. Los seres humanos aprendemos de las experiencias tanto positivas como adversas. Sin embargo, bajo ciertas condiciones el sistema puede fallar y dejar información guardada disfuncionalmente en las redes de la memoria. Esa información del pasado es responsable de los síntomas del presente e impide el desarrollo o la utilización de las estrategias de regulación emocional y resolución de problemas. El procedimiento de la Terapia EMDR permitiría la resolución adaptativa de la información permitiendo la recuperación del individuo.</p>
 
         </span>
 
@@ -449,10 +455,7 @@
 
             <h3>¿Cómo trabajamos en EMDR?</h3>
 
-            <p>El procedimiento EMDR está diseñado para acceder a experiencias bloqueadas en las redes de memoria e integrar esa información y lograr una resolución de los síntomas que llevan al paciente a la consulta.
-                EMDR en términos generales es un modelo experiencial, es decir, que dirige sus intervenciones apoyado en la experiencia personal y subjetiva de los diferentes eventos traumáticos del paciente. 
-                El terapeuta EMDR a través de un procedimiento específico identifica las situaciones del Presente que disparan la sintomatología asociadas al motivo de consulta. 
-                Una vez trazado ese mapa de experiencias asociadas, el paciente junto al terapeuta EMDR irán accediendo a las diferentes experiencias bloqueadas hasta ser integradas y permitir desarrollar o utilizar los recursos necesarios para afrontar de manera adaptativa el presente y futuros desafíos similares.</p>
+            <p>El procedimiento EMDR está diseñado para acceder a experiencias bloqueadas en las redes de memoria e integrar esa información y lograr una resolución de los síntomas que llevan al paciente a la consulta. EMDR en términos generales es un modelo experiencial, es decir, que dirige sus intervenciones apoyado en la experiencia personal y subjetiva de los diferentes eventos traumáticos del paciente. El terapeuta EMDR a través de un procedimiento específico identifica las situaciones del Presente que disparan la sintomatología asociadas al motivo de consulta. Una vez trazado ese mapa de experiencias asociadas, el paciente junto al terapeuta EMDR irán accediendo a las diferentes experiencias bloqueadas hasta ser integradas y permitir desarrollar o utilizar los recursos necesarios para afrontar de manera adaptativa el presente y los futuros desafíos similares.</p>
 
         </span>
 
@@ -460,12 +463,10 @@
 
             <h3>¿Qué Trastornos pueden ser tratados con EMDR?</h3>
 
-            <p>EMDR es un modelo de primera elección para el tratamiento del trauma psicológico. Desde sus primeras investigaciones lo indican altamente eficaz para el tratamiento del Trastorno de Estrés Postraumático (TEPT). Sin embargo, en la actualidad las investigaciones han demostrado eficacia en el tratamiento de otros cuadros:
-                Ansiedad, Fobias, Ataques de Pánico.
-                Depresión. Duelo patológico.
-                Trauma Complejo y Trastornos Disociativos.
-                EMDR no es una panacea curalotodo, y debe ser aplicado sólo en manos de profesionales adecuadamente formados tanto en el modelo como en el trastorno o condición médico-psicológica a tratar.
-                En CIPSE los profesionales están formados en EMDR y son parte de un proceso de formación continua desde el entrenamiento básico hasta formación avanzada, integrando otras formas de psicoterapia efectivas tanto para el trauma como para otras condiciones.  </p>
+            <p>EMDR es un modelo de primera elección para el tratamiento del trauma psicológico. Desde sus primeras investigaciones lo indican como altamente eficaz para el tratamiento del Trastorno de Estrés Postraumático (TEPT). <br>
+                Sin embargo, en la actualidad las investigaciones han demostrado eficacia en el tratamiento de otros cuadros: Ansiedad, Fobias, Ataques de Pánico, Depresión, Duelo patológico, Dolor, Trauma Complejo y Trastornos Disociativos. EMDR no es una panacea “curalotodo”, y debe ser aplicado sólo en manos de profesionales adecuadamente formados tanto en el modelo como en el trastorno o condición médico-psicológica a tratar. <br>
+                En CIPSE los profesionales están formados en EMDR y son parte de un proceso de formación continua desde el entrenamiento básico hasta la formación avanzada, integrando otras formas de psicoterapia efectivas tanto para el trauma como para otras condiciones.
+                </p>
 
         </span>
     </div>
