@@ -211,7 +211,7 @@
         <span id="eq3">
             <h3>Lic. Damián Cuttitta</h3>
 
-            <img src="FotosEquipo/missingPhoto.png">
+            <img src="FotosEquipo/Damian.png">
 
             <p>Licenciado en Psicología. <br>
                 Entrenador EMDR del EMDR Institute (USA) y EMDR IBA Argentina. <br>
@@ -295,6 +295,7 @@
                           <form id="formCdA" action="https://formsubmit.co/contactocipse@gmail.com" method="POST" class="row align-items-center g-5">
 
                             <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="Consulta de admisión">
 
                             <div class="col-12 text-center">
                               <h4>Datos del Solicitante</h4>
@@ -351,7 +352,7 @@
                             <div class="col-12 text-center">
                                 <label for="MotivoCdA">Motivo de Consulta (Opcional)</label>
                                 <br>
-                                <textarea id="MotivoCdA" name="MotivoCdA"></textarea>
+                                <textarea id="MotivoCdA" name="MotivoCdA" required placeholder="Es más fácil derivar para las admisiones si conocemos el motivo de su consulta. Si prefiere no decir, por favor aclare."></textarea>
                             </div>
 
                             <div class="col text-center">
@@ -392,16 +393,14 @@
                                 <input type="checkbox" id="Jueves" name="dia" value="Jueves">
                                 <label for="Jueves"> Jueves</label><br>
                                 <input type="checkbox" id="Viernes" name="dia" value="Viernes">
-                                <label for="Viernes"> Viernes</label><br>
-                                <input type="checkbox" id="Sabado" name="dia" value="Sabado">
-                                <label for="Sabado"> Sábado</label>
+                                <label for="Viernes"> Viernes</label>
                               </div>
             
               
                               <div class="col text-center">
                                 <label for="Disponibilidad">Rango Horario</label>
                                 <br>
-                                <input type="text" id="Disponibilidad" name="Disponibilidad" required placeholder="De 8:00 a 19:00">
+                                <input type="text" id="Disponibilidad" name="Disponibilidad" required placeholder="Coloque la máxima disponibilidad horaria">
                               </div>
             
                             <div class="col-12 text-center">
@@ -485,7 +484,7 @@
         <form class="cnt" action="https://formsubmit.co/contactocipse@gmail.com" method="POST">
 
 
-        <input type="hidden" name="_subject" value="Nuevo mensaje de CIPSE.com">
+        <input type="hidden" name="_subject" value="Mensaje de contacto">
         <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
         <input type="hidden" name="_template" value="box">
 
