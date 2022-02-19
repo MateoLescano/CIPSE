@@ -646,7 +646,7 @@ body{
 #BtnCdA{
   margin: 20px;
 
-  background-color: #b7410E;
+  background-color: #ed9121;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -1226,9 +1226,9 @@ input:not(.inputContacto), select:not(.inputContacto), textarea:not(.inputContac
     opacity: 1;
   }
 
-  #tituloMapa{
-    /* color: honeydew; */
-  }
+  /* #tituloMapa{
+    color: honeydew;
+  } */
 
   .Contacto form{
     display: flex;
