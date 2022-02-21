@@ -32,8 +32,8 @@
     <nav id="navB" class="navbar navbar-expand-lg navbar-dark">
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="logo.png" alt="" width="50" height="40">
+            <a class="navbar-brand" href="#cont-slider">
+                <img src="logo.png" alt="" width="70" height="60">
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,35 +41,51 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="index.html#EMDR">¿Qué es EMDR?</a>
+                <a class="nav-link active mx-3" aria-current="page" href="#EMDR">EMDR</a>
               </li>
               
               <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle mx-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Formación
+                <a class="nav-link active dropdown-toggle mx-3" href="Formacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Formación
                 </a>
-                <ul class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Cursos EMDR</a></li>
-                  <li><a class="dropdown-item" href="#">Cursos de Trauma</a></li>
+                <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Formacion.html#CursosEMDR">Cursos EMDR</a></li>
+                  <li><a class="dropdown-item" href="Formacion.html#FormTyE">Cursos de Trauma</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Ver todos los cursos</a></li>
+                  <li><a class="dropdown-item" href="Formacion.html">Ver todos los cursos</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="index.html#Tratamiento">Tratamiento</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle mx-3" aria-current="page" href="#Tratamiento" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamiento</a>
+                <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#Tratamiento">Ver información</a></li>
+                    <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCdA">Solicitar Consulta</a></li>
+                  </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="index.html#FAQ">Preguntas frecuentes</a>
+                <a id="navFAQ" class="nav-link active mx-3" aria-current="page" href="#FAQ">Preguntas frecuentes</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="index.html#Contacto">Contactanos</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle mx-3" aria-current="page" href="#Contacto" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
+                <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#Contacto">Enviar mensaje</a></li>
+                    <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5491167962497" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                  </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#">Recursos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#">Foro</a>
-            </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle mx-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Recursos
+                   </a>
+                   <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">Recursos Generales</a></li>
+                     <li><a class="dropdown-item" href="#">Psicoeducación</a></li>
+                     <li><a class="dropdown-item" href="#">Entrenamiento EMDR</a></li> 
+                     <li><a class="dropdown-item" href="#">Trauma</a></li> 
+                   </ul>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link active mx-3 disabled" aria-current="page" href="#">Solicitar Tratamiento</a>
+            </li> -->
             </ul>
           </div>
         </div>
