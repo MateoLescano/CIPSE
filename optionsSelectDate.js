@@ -54,7 +54,6 @@ function clearSelects(id){
 
 function crearArrayFechas(){
     const hoy = new Date();
-    const d1 = new Date("3/4/2022");
     const d2 = new Date("4/22/2022");
     const d3 = new Date("6/3/2022");
     const d4 = new Date("7/29/2022");
@@ -66,9 +65,6 @@ function crearArrayFechas(){
     const e4 = new Date("12/2/2022");
 
     //EMDR PARTE 1
-    if (hoy < d1){
-        arrayC1.push("4, 5, 6 y 11, 12, 13 de Marzo");
-    }
     if (hoy < d2){
         arrayC1.push("22, 23, 24 y 29, 30 de Abril y 1 de Mayo");
     }
@@ -83,9 +79,6 @@ function crearArrayFechas(){
     }
 
     //EMDR PARTE 2
-    if (hoy < e1){
-        arrayC2.push("25, 26, 27 de Febrero y 4, 5, 6 de Marzo");
-    }
     if (hoy < e2){
         arrayC2.push("6, 7, 8 y 13, 14, 15 de Mayo");
     }
