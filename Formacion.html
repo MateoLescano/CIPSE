@@ -34,7 +34,7 @@
     <nav id="navB" class="navbar navbar-expand-lg navbar-dark">
 
       <div class="container-fluid">
-          <a class="navbar-brand" href="#cont-slider">
+          <a class="navbar-brand" href="index.html#cont-slider">
               <img src="logo.png" alt="" width="70" height="60">
             </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,26 +43,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active mx-3" aria-current="page" href="#EMDR">EMDR</a>
+              <a class="nav-link active mx-3" aria-current="page" href="index.html#EMDR">EMDR</a>
             </li>
             
             <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle mx-3" aria-current="page" href="#Tratamiento" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamiento</a>
+              <a class="nav-link active dropdown-toggle mx-3" aria-current="page" href="index.html#Tratamiento" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamiento</a>
               <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#Tratamiento">Ver información</a></li>
+                <li><a class="dropdown-item" href="index.html#Tratamiento">Ver información</a></li>
                   <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCdA">Solicitar Consulta</a></li>
                 </ul>
           </li>
           <li class="nav-item">
-              <a class="nav-link active mx-3" aria-current="page" href="#Equipo">Equipo</a>
+              <a class="nav-link active mx-3" aria-current="page" href="index.html#Equipo">Equipo</a>
             </li>
           <li class="nav-item">
-              <a id="navFAQ" class="nav-link active mx-3" aria-current="page" href="#FAQ">Preguntas frecuentes</a>
+              <a id="navFAQ" class="nav-link active mx-3" aria-current="page" href="index.html#FAQ">Preguntas frecuentes</a>
           </li>
           <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle mx-3" aria-current="page" href="#Contacto" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
+              <a class="nav-link active dropdown-toggle mx-3" aria-current="page" href="index.html#Contacto" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
               <ul id="liExpanded" class="dropdown-menu mx-3" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#Contacto">Enviar mensaje</a></li>
+                  <li><a class="dropdown-item" href="index.html#Contacto">Enviar mensaje</a></li>
                   <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5491167962497" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
           </li>
@@ -425,7 +425,7 @@
           La formación estará completamente a cargo del Dr. Lescano y eventuales, docentes invitados.
           </p>
 
-            <button disabled class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modalTraumaYEMDR">Pre-Inscripción para Trauma y EMDR</button>
+            <button class="btn btn-outline-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modalTraumaYEMDR">Pre-Inscripción para Trauma y EMDR</button>
       
                 <!-- Modal -->
                 <div class="modal fade" id="modalTraumaYEMDR" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -471,14 +471,43 @@
 
                           <div class="col-12">
                             <h4>Datos del curso</h4>
-                            <p id="textoEntr">La inscripción está sujeta a la disponibilidad de la fecha elegida. Al enviar la pre-inscripción será contactado a la brevedad para confirmar la inscripción al curso.</p>
+                            <p id="textoEntr">La inscripción está sujeta a la disponibilidad del curso. Al enviar la pre-inscripción será contactado a la brevedad para confirmar la inscripción al curso.</p>
                           </div>
 
                           <div class="col-12 text-center">
-                            <label for="fechaSB">Semana del curso</label>
+                            <label for="Fecha">¿Completó el entrenamiento EMDR Parte 1 y 2?</label>
                             <br>
-                            <input type="week" id="fechaSB" name="fechaSB" min="2022-01" max="2022-12" required>
+                            <select name="EntrenamientosCompletados" id="EntrenamientosCompletados">
+                              <option value="Ambas">Sí, ambas partes</option>
+                              <option value="Solo Parte 1">Solo EMDR Parte 1</option>
+                            </select>
                           </div>
+
+                          <!-- <div class="col-12 text-center">
+                            <label for="Fecha">Fecha</label>
+                            <br>
+                            <select name="Fecha">
+                                <option value="0" selected disabled>-</option>
+                                <option value="14-2-22">Lunes 14-2-22 18:30 a 20:45</option>
+                                <option value="23-3-22">Miercoles 23-3-22 18:30 a 20:45</option>
+                                <option value="04-4-22">Lunes 04-4-22 18:30 a 20:45</option>
+                                <option value="18-4-22">Lunes 18-4-22 18:30 a 20:45</option>
+                                <option value="02-5-22">Lunes 02-5-22 18:30 a 20:45</option>
+                                <option value="20-5-22">Viernes 20-5-22 18:30 a 20:45</option>
+                                <option value="06-6-22">Lunes 06-6-22 18:30 a 20:45</option>
+                                <option value="22-6-22">Miercoles 22-6-22 18:30 a 20:45</option>
+                                <option value="04-7-22">Lunes 04-7-22 18:30 a 20:45</option>
+                                <option value="20-7-22">Miercoles 20-7-22 a 18:30 a 20:45</option>
+                                <option value="01-8-22">Lunes 01-8-22 18:30 a 20:45</option>
+                                <option value="24-8-22">Miercoles 24-8-22 18:30 a 20:45</option>
+                                <option value="05-9-22">Lunes 05-9-22 18:30 a 20:45</option>
+                                <option value="23-9-22">Viernes 23-9-22 18:30 a 20:45</option>
+                                <option value="03-10-22">Lunes 03-10-22 18:30 a 20:45</option>
+                                <option value="19-10-22">Miercoles 19-10-22 18:30 a 20:45</option>
+                                <option value="7-11-22">Lunes 7-11-22 18:30 a 20:45</option>
+                                <option value="23-11-22">Miercoles 23-11-22 18:30 a 20:45</option>
+                            </select>
+                          </div> -->
           
                           <div class="col-12 text-center">
                             <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
