@@ -74,6 +74,9 @@
                     <li><a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5491167962497" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                   </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active mx-3" type="button" data-bs-toggle="modal" data-bs-target="#modalLibro">Preventa Libro</a>
+            </li>
             <!-- <li class="nav-item dropdown">
                 <a class="nav-link active dropdown-toggle mx-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Recursos
@@ -93,13 +96,100 @@
         </div>
       </nav>
 
+      <!-- Modal -->
+      <div class="modal fade" id="modalLibro" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Preventa del Libro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="formCdA" action="https://formsubmit.co/nocontestar@cipse.com.ar" method="POST" class="row align-items-center g-5">
+
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Consulta de admisión">
+
+                <div class="col-12 text-center">
+                  <h4>Datos del Comprador</h4>
+                </div>
+
+                <div class="col text-center">
+                  <label for="Nombre">Nombre y Apellido</label>
+                  <br>
+                  <input type="text" id="Nombre" name="Nombre" required placeholder="*">
+                </div>
+
+                <div class="col text-center">
+                  <label for="Mail">Mail</label>
+                  <br>
+                  <input type="email" id="Mail" name="Mail" required placeholder="*">
+                </div>
+
+                <div class="col text-center">
+                  <label for="Telefono">Teléfono</label>
+                  <br>
+                  <input type="tel" id="Telefono" name="Telefono" required placeholder="*">
+                </div>
+
+                <div class="col text-center">
+                    <label for="alumno">¿Es alumno de CIPSE?</label>
+                    <br>
+                    <input type="radio" id="si" name="alumno" value="Si">
+                    <label for="si">Sí</label><br>
+                    <input type="radio" id="no" name="alumno" value="No">
+                    <label for="no">No</label>
+                </div>
+                
+
+                <div class="col-12 text-center">
+                  <h4>La entrega estimada es alrededor del XX de abril y será en horarios y lugar de la secretaría (Av. Lacroze 2827, Piso 8, Dpto. F, CABA)</h4>
+                </div>
+
+                <div class="col-12 text-center">
+                    <p>Para aquellos interesados en recibir el libro en su domicilio, estamos evaluando las posibilidades de entrega y costo.<br>
+                      Estoy interesado en recibir el ejemplar en el domicilio que consigno a continuación:</p>
+                </div>
+
+                <div class="col text-center">
+                  <label for="Calle">Calle y numero</label>
+                  <br>
+                  <input type="text" id="Calle" name="Calle">
+                </div>
+                <div class="col text-center">
+                  <label for="Depto">Piso y depto.</label>
+                  <br>
+                  <input type="text" id="Depto" name="Depto">
+                </div>
+                <div class="col text-center">
+                  <label for="Localidad">Localidad</label>
+                  <br>
+                  <input type="text" id="Localidad" name="Localidad">
+                </div>
+                <div class="col text-center">
+                  <label for="CP">Codigo postal</label>
+                  <br>
+                  <input type="number" id="CP" name="CP">
+                </div>
+
+
+                <div class="col-12 text-center">
+                  <button id="btnEnviar" class="btn btn-outline-success" type="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- FAB -->
       <div class="FAB">
         <a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#modalCdA"><img src="fab.png" alt=""></a>
       </div>
 
-    
-    
         <section id="cont-slider">	
             <ul id="slider">
                 
@@ -126,7 +216,7 @@
                     <h3>Robbie Dunton, MA, MS<br>
                         Director Ejecutivo,<br>
                         Instituto EMDR de Francine Shapiro</h3>
-                <a href="Formacion.html#FormTyE" class="btnSlider">Ver más</a>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#modalLibro" class="btnSlider">Preventa</a>
                 </div>
                 </div>
                 </li>
